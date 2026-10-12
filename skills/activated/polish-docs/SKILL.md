@@ -17,7 +17,7 @@ Use concrete, evidence-driven copy: no hand-waving, empty superlatives, or unsup
 
 1. Review the current documentation and project. Identify the intended newcomer, the concrete value offered, and onboarding friction.
 2. Compare introductions from successful projects with similar audiences. Choose relevant patterns to adapt; [reference examples](references/patterns.md) provide starting points.
-3. Build the opening around a desirable outcome: a benefit-led headline, a positioning sentence identifying the project and its audience-specific benefit, concrete proof, and one primary next action.
+3. Identify the product category, what it does, and how the reader uses it before relying on an abstract benefit or slogan. Build the opening around a desirable outcome: a benefit-led headline, a positioning sentence identifying the project and its audience-specific benefit, concrete proof, and one primary next action.
 4. Follow the reader's adoption sequence: “Is this for me?” → “Why this?” → “Can I trust it?” → “How do I start?” Use a relevant example or demo as proof, address adoption barriers beside the call to action, then lead through a quickstart to a useful result. Link deeper reference and contributor material afterward.
 5. Apply a coherent visual treatment using the conventions below and the existing documentation platform.
 6. Walk through the revised experience as a newcomer, checking claims, instructions, and rendered presentation as the task permits. Resolve remaining friction before handing it back.

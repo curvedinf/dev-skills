@@ -1,8 +1,10 @@
 # Dev skills
 
-**Carry your working conventions from project to project.**
+**A library of reusable workflow skills for coding agents.**
 
-Concise, stack-independent skills for how agents investigate, experiment, document, and retain progress. They normalize capable agents' default approaches while leaving implementation choices to their expertise.
+Dev skills is a collection of Markdown instructions you install in a project or your agent's skill directory. The skills define how agents debug failures, run experiments, test changes, manage Git branches, write documentation, and record progress between sessions.
+
+Enable **passive skills** for ongoing conventions, such as when to test or commit. Invoke **activated skills** for specific jobs, such as polishing a README or running repeated optimization experiments. The workflows are stack-independent, so you can reuse them across projects.
 
 [Install](#install) · [Try a skill](#try-a-skill) · [Browse the collection](#the-collection) · [Create your own](#create-and-refine-skills)
 
