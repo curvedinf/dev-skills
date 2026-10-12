@@ -35,6 +35,7 @@ Routine work should not require repeated reminders about scope, testing, commits
 | [git-discipline](skills/passive/git-discipline/SKILL.md) | Preserve local work and follow branch, commit, and push conventions. |
 | [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) | Select checks for development, integration, and release. |
 | [documentation-style](skills/passive/documentation-style/SKILL.md) | Explain the product and reader context before giving instructions. |
+| [refine-skill](skills/passive/refine-skill/SKILL.md) | Turn corrections and workflow lessons into skill updates when enabled. |
 | [scratch-space](skills/passive/scratch-space/SKILL.md) | Save progress, decisions, and failed experiments for later sessions. |
 
 ## Workflows you ask your agent to run
@@ -45,7 +46,7 @@ Some jobs need a deliberate process: a bug needs a reproduction, an experiment n
 | --- | --- |
 | [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md) | Install the library in a project and merge its agent instructions. |
 | [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md) | Install the library for your agent to use across projects. |
-| [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) | Create reusable skills or refine them from observed problems. |
+| [design-skill](skills/activated/design-skill/SKILL.md) | Create reusable process skills. |
 | [polish-docs](skills/activated/polish-docs/SKILL.md) | Rewrite and style documentation so newcomers understand the project and can start using it. |
 | [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) | Reproduce a bug, identify its cause, and verify the fix. |
 | [design-validation](skills/activated/design-validation/SKILL.md) | Design tests that establish whether requirements are met. |

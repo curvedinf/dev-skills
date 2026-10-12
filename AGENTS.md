@@ -34,7 +34,8 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 | test cadence, nightly, release gates | [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) |
 | wording, terminology, examples | [documentation-style](skills/passive/documentation-style/SKILL.md) |
 | checkpoint, resume, history | [scratch-space](skills/passive/scratch-space/SKILL.md) |
-| create skill, refine, consolidate | [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) |
+| create skill, author workflow | [design-skill](skills/activated/design-skill/SKILL.md) |
+| correction, workflow gap, refine, self-improvement | [refine-skill](skills/passive/refine-skill/SKILL.md) |
 | README, onboarding, quickstart | [polish-docs](skills/activated/polish-docs/SKILL.md) |
 | debug, crash, regression | [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) |
 | test plan, acceptance, coverage gaps | [design-validation](skills/activated/design-validation/SKILL.md) |
@@ -46,7 +47,7 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 
 ## Authoring
 
-Use [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) for requested creation or refinement.
+Use [design-skill](skills/activated/design-skill/SKILL.md) for creation and [refine-skill](skills/passive/refine-skill/SKILL.md) for evidence-backed maintenance.
 
 - `README.md` is for humans and is marketing-centric: communicate concrete value, credible proof, and a clear path to adoption. `AGENTS.md` is for computers and is utility-centric: provide precise routing, constraints, commands, and decision rules. Keep agent operating instructions out of the README and promotional prose out of AGENTS. Marketing remains evidence-driven, without exaggeration.
 - Specify outcomes and consequential decision criteria; delegate execution mechanics.
@@ -66,7 +67,7 @@ Use `./agents/tmp/` for disposable files. Always keep `/agents/tmp/` in the root
 
 Self-improvement: enabled.
 
-After a skill-assisted task exposes a reusable lesson, apply the [self-improvement hook](skills/activated/design-and-refine-skill/SKILL.md#self-improvement-hook) within the task's write scope. No evidence means no edit. Set the declaration above to `Self-improvement: disabled.` to turn off automatic refinement; explicit authoring requests still apply.
+During skill-assisted work, notice user corrections, recurring friction, workflow gaps, and verified reusable lessons. **Before task completion**, assess that evidence and apply [refine-skill](skills/passive/refine-skill/SKILL.md) when a reusable correction is warranted. Preserve task scope and prior requirements; no evidence means no edit. This completion check is required while enabled, even when skill authoring was not the main task. Set `Self-improvement: disabled.` to disable automatic refinement; explicit refinement requests still apply.
 
 ## Reference skill libraries
 
