@@ -6,7 +6,7 @@
 
 - [Collection review](collection-review.md): routing, ownership, and redundancy review.
 
-- [Testing doctrine](testing-doctrine.md): Inferno baseline and portable interval decisions.
+- [Testing doctrine](testing-doctrine.md): Testing workflow baseline and portable interval decisions.
 
 - [Git discipline](git-discipline.md): preference basis and validation scope.
 
