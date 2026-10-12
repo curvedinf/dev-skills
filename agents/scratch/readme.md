@@ -13,3 +13,5 @@ Pitch correction: abstract benefits did not explain the product. Opening now sta
 Installation correction: the install section consists only of project-wide and agent-wide copy-paste prompts, each pointing directly to its installer skill. Removed the table and explanatory setup prose.
 
 Readability correction: removed Try a skill, repeated setup explanations, scratch walkthrough, and refinement configuration from README. Retained product identity, two install prompts, and the complete catalog under descriptive headings: Ongoing coding conventions and Workflows you request. Detailed policy remains in AGENTS and skills.
+
+Installation context restored: each copy-paste prompt needs a concise explanation of destination and reach. Project-wide lives with the repository and supports sharing; agent-wide lives in the personal agent library for reuse across projects. Brevity must preserve the information needed to choose.

@@ -6,13 +6,17 @@ Install Markdown instructions for debugging, experiments, testing, Git, document
 
 ## Install
 
-**Project-wide**
+**Project-wide — for this repository**
+
+Copies the skills into your project and merges their guidance into its `AGENTS.md`, so the setup lives with the code and can be shared with collaborators.
 
 ```text
 Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/project-install-dev-skills/SKILL.md to install dev-skills in this project and merge applicable guidance into its AGENTS.md.
 ```
 
-**Agent-wide**
+**Agent-wide — across your projects**
+
+Installs the skills in your agent’s personal skill directory and integrates shared guidance there, making them available across projects without copying the library into each repository.
 
 ```text
 Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/agent-install-dev-skills/SKILL.md to install dev-skills in your agent-wide skills directory and integrate its AGENTS.md guidance into your shared conventions skills.

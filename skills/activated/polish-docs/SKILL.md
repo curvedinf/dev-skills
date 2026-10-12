@@ -22,7 +22,7 @@ Use concrete, evidence-driven copy: no hand-waving, empty superlatives, or unsup
 5. Apply a coherent visual treatment using the conventions below and the existing documentation platform.
 6. Walk through the revised experience as a newcomer, checking claims, instructions, and rendered presentation as the task permits. Resolve remaining friction before handing it back.
 
-Use direct, reader-centered voice and the audience's terminology. Put proof beside each benefit; replace evaluative adjectives with observable behavior. Use descriptive benefit or task headings, avoiding generic labels such as “The collection”; and name the primary action by its payoff. Prefer one copyable example with labeled input, output, and substitutions. Keep deeper detail behind descriptive links. Once installation provides a complete first-use path, omit redundant setup walkthroughs. For ongoing prose work, use [documentation-style](../../passive/documentation-style/SKILL.md).
+Use direct, reader-centered voice and the audience's terminology. Put proof beside each benefit; replace evaluative adjectives with observable behavior. Use descriptive benefit or task headings, avoiding generic labels such as “The collection”; and name the primary action by its payoff. Prefer one copyable example with labeled input, output, and substitutions. Keep deeper detail behind descriptive links. Explain each installation option’s destination and scope beside its copyable action. Omit redundant walkthroughs, not the context needed to choose. For ongoing prose work, use [documentation-style](../../passive/documentation-style/SKILL.md).
 
 ## Visual conventions
 
