@@ -2,7 +2,7 @@
 
 **A library of reusable workflow skills for coding agents.**
 
-Dev Skills packages development processes as Markdown instructions for coding agents. Its skills cover debugging, testing, Git, documentation, experiments, and progress tracking, with conventions you can reuse across projects and stacks.
+Different coding agents make different choices about when to test, what to commit, how to investigate failures, and what to remember. Dev Skills puts those decisions into reusable Markdown instructions, so you can establish your working conventions once instead of explaining them again in every project and session.
 
 ## Install
 
@@ -26,7 +26,7 @@ Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/agent-ins
 
 ## Conventions your agent follows throughout work
 
-Passive skills define how your agent handles recurring decisions—what to test, when to commit, and what to remember. Once enabled, they guide relevant work without a separate request each time.
+Routine work should not require repeated reminders about scope, testing, commits, or lost context. Passive skills keep those expectations available throughout a task, giving your agent a shared basis for recurring decisions.
 
 | Skill | What it guides |
 | --- | --- |
@@ -39,7 +39,7 @@ Passive skills define how your agent handles recurring decisions—what to test,
 
 ## Workflows you ask your agent to run
 
-Activated skills define a process for a specific job. Ask your agent to use one by name—for example, “Use polish-docs to rewrite this README”—and describe the result you want.
+Some jobs need a deliberate process: a bug needs a reproduction, an experiment needs a baseline, and an interrupted deployment needs its state checked before retrying. Activated skills capture those processes so you can request the job without writing the procedure each time. Ask your agent to use a skill by name and describe the result you want.
 
 | Skill | What it does |
 | --- | --- |
