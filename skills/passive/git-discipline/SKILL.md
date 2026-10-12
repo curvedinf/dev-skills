@@ -1,6 +1,6 @@
 ---
 name: git-discipline
-description: Preserve working state, honor commit and publication scope, and verify Git outcomes while performing authorized repository work.
+description: Git, commit, push, merge, branches, staging, release candidate. Apply working-state preservation, branch flow, and task-completion publication defaults when enabled.
 metadata:
   category: passive
 ---
@@ -11,7 +11,7 @@ Apply these conventions during repository work. When enabled, the task-completio
 
 ## Task completion
 
-Apply [testing-doctrine](../testing-doctrine/SKILL.md) when available: focused checks during iteration, routine and triggered coverage at handoff, bounded staging rotation, and complete compatible release evidence before promotion. Standalone, follow the project's equivalent gates; commit or push success never substitutes for acceptance.
+Use the project’s gates and [testing-doctrine](../testing-doctrine/SKILL.md) for validation cadence; publication never substitutes for acceptance.
 
 - **Working directly on `main`:** commit the task's changes locally after each completed work task. Push only when explicitly requested.
 - **Working on a persistent developer branch:** commit and push after each completed work task, then verify the remote ref. No repeated permission request is needed.
@@ -42,6 +42,6 @@ owner/feature → developer → staging → release candidate → main
 
 Carry release-candidate fixes back to staging and affected developer branches, using merges where their ancestry is appropriate or traceable individual fixes where a merge would import unrelated work. An urgent production fix starts from `main`, receives the required validation, and propagates to any active candidate and development lines. Record propagation so the next integration cannot lose the correction.
 
-For work spanning sessions, retain protected paths, integration decisions, promotion and fix-propagation status, commit/remote identity, and unfinished publication steps in [scratch-space](../scratch-space/SKILL.md). Standalone, use Git-versioned `./agents/scratch/` with an index and goal notes. Include relevant durable notes in authorized commits; keep `./agents/tmp/` ignored.
+Read and update [scratch records](../scratch-space/SKILL.md) in `agents/scratch/`: protected paths, integration decisions, promotion/fix propagation, commit and remote identity, and pending publication.
 
 Illustrative report: “Published all pending project changes to the requested branch; its remote ref matches the local commit. The protected local configuration remains uncommitted. Only the requested syntax checks ran.”

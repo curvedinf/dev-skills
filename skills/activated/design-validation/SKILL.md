@@ -1,6 +1,6 @@
 ---
 name: design-validation
-description: Design or revise validation for a change, user journey, or test suite when requested; execute the resulting checks when included in scope.
+description: Test plan, acceptance criteria, coverage gaps, test-suite design. Design checks for specific claims; testing-doctrine owns execution cadence and evidence reuse.
 metadata:
   category: activated
 ---
@@ -9,9 +9,9 @@ metadata:
 
 Choose checks by the behavior they establish, not by test count or coverage percentage.
 
-Use [testing-doctrine](../../passive/testing-doctrine/SKILL.md) when available to assign checks to iteration, handoff, staging rotation, or release obligations. Otherwise use the project's interval and evidence-reuse rules.
+Assign designed checks to the project’s intervals using [testing-doctrine](../../passive/testing-doctrine/SKILL.md) when available.
 
-Consult project scratch space for existing evidence and coverage gaps; retain the claim-to-check mapping, candidate-specific results, and outstanding obligations there. Follow [scratch-space](../../passive/scratch-space/SKILL.md) when available; otherwise use `./agents/scratch/` with a small index and goal-specific notes.
+For ongoing work, read and update [scratch records](../../passive/scratch-space/SKILL.md) in `agents/scratch/`: claim-to-check mappings, candidate-specific results, and uncovered obligations.
 
 1. Identify the acceptance claims, consequential failure modes, and existing evidence. Account for the requested test budget and project gates.
 2. Map each claim to the smallest adequate check. Reuse existing tests and fixtures where suitable; include actual entrypoints, adverse conditions, and lifecycle boundaries when those are part of the claim.

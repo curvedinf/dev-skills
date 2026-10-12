@@ -23,7 +23,7 @@ Lead with its concrete value and give newcomers a working first-use example.
 
 For another project, point to the skill's absolute path in your checkout and name the target project. The skill guides the process; the target project supplies its requirements and implementation details.
 
-Each skill is readable Markdown with its supporting files alongside it. To install selected skills, copy their complete folders to your agent host's skill directory. Installation and discovery depend on the host. Keep the collection's relative layout when using it by path; workflows also include a scratch-space fallback for standalone use.
+Each skill is readable Markdown with its supporting files alongside it. To install selected skills, copy their complete folders to your agent host's skill directory. Installation and discovery depend on the host. Keep the collection's relative layout when using it by path; copy `scratch-space` alongside workflows that need durable progress. Without it, keep indexed, Git-versioned goal notes in `agents/scratch/` and disposable files in ignored `agents/tmp/`.
 
 ## The collection
 
@@ -33,6 +33,17 @@ Two kinds of skills, modeled after abilities in *Magic: The Gathering*:
 | --- | --- |
 | Apply within their scope once enabled, like static abilities. | Start when deliberately requested, like activated abilities. |
 | Example: preserve evidence and constraints throughout work. | Example: run a controlled experiment or polish a README. |
+
+### Choose what to read
+
+Scan the request terms below or a skill’s frontmatter `description`. Load the workflow matching the requested outcome and only the passive conventions enabled for that work. A keyword is a routing hint, not permission to start another task.
+
+- **Testing:** `testing-doctrine` decides when and how broadly to test; `design-validation` designs the checks; `diagnose-and-repair` investigates a failing behavior.
+- **Improvement:** `run-experiment` answers a bounded comparison; `indefinite-loop` repeats experiment batches only when continuous work is requested.
+- **Documentation:** `documentation-style` shapes ordinary edits; `polish-docs` redesigns the first-use experience.
+- **Delivery:** `git-discipline` governs repository changes; `operate-workflow` handles external operations; `audit-and-resolve` assesses findings; `coordinate-work` manages assignments.
+
+Switch workflows when the needed outcome changes, carrying the same goal record forward. Cross-links provide related guidance; they do not require loading the whole collection or invoking every linked workflow.
 
 ### Passive skills
 
@@ -44,30 +55,30 @@ During project work, follow
 and [scratch-space](../dev-skills/skills/passive/scratch-space/SKILL.md).
 ```
 
-| Skill | Convention |
-| --- | --- |
-| [evidence-discipline](skills/passive/evidence-discipline/SKILL.md) | Keep claims proportional to the evidence. |
-| [contract-discipline](skills/passive/contract-discipline/SKILL.md) | Preserve agreed outcomes, constraints, and ownership. |
-| [git-discipline](skills/passive/git-discipline/SKILL.md) | Preserve working state and verify the full authorized publication. |
-| [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) | Match testing and evidence reuse to iteration, integration, and release. |
-| [documentation-style](skills/passive/documentation-style/SKILL.md) | Write concrete, reader-oriented documentation. |
-| [scratch-space](skills/passive/scratch-space/SKILL.md) | Preserve goal progress, experiment outcomes, and decisions across sessions. |
+| Skill | Request terms | Convention |
+| --- | --- | --- |
+| [evidence-discipline](skills/passive/evidence-discipline/SKILL.md) | claims, citations, uncertainty | Keep claims proportional to the evidence. |
+| [contract-discipline](skills/passive/contract-discipline/SKILL.md) | scope, requirements, ownership | Preserve agreed outcomes, constraints, and ownership. |
+| [git-discipline](skills/passive/git-discipline/SKILL.md) | commit, push, merge, branches | Preserve working state and verify the full authorized publication. |
+| [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) | test cadence, nightly, release gates | Match testing and evidence reuse to iteration, integration, and release. |
+| [documentation-style](skills/passive/documentation-style/SKILL.md) | wording, terminology, examples | Write concrete, reader-oriented documentation. |
+| [scratch-space](skills/passive/scratch-space/SKILL.md) | checkpoint, resume, history | Preserve goal progress, experiment outcomes, and decisions across sessions. |
 
 ### Activated skills
 
 Request these by file path, or by name when installed and supported by your host. Their included Codex adapters disable implicit invocation; passive adapters allow it. Directory names alone do not enforce either behavior.
 
-| Skill | Outcome |
-| --- | --- |
-| [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) | A minimal reusable process or an evidence-backed refinement. |
-| [polish-docs](skills/activated/polish-docs/SKILL.md) | A credible, visually polished path to first use. |
-| [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) | An established failure mechanism and verified correction. |
-| [design-validation](skills/activated/design-validation/SKILL.md) | Checks matched to acceptance claims and their limits. |
-| [run-experiment](skills/activated/run-experiment/SKILL.md) | A reproducible comparison and supported conclusion. |
-| [indefinite-loop](skills/activated/indefinite-loop/SKILL.md) | Continuous batches of substantive experiments, retaining measured improvements. |
-| [coordinate-work](skills/activated/coordinate-work/SKILL.md) | Bounded assignments and verified integration. |
-| [audit-and-resolve](skills/activated/audit-and-resolve/SKILL.md) | Substantiated findings and explicit dispositions. |
-| [operate-workflow](skills/activated/operate-workflow/SKILL.md) | Verified operational progress and safe continuation. |
+| Skill | Request terms | Outcome |
+| --- | --- | --- |
+| [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) | create skill, refine, consolidate | A minimal reusable process or an evidence-backed refinement. |
+| [polish-docs](skills/activated/polish-docs/SKILL.md) | README, onboarding, quickstart | A credible, visually polished path to first use. |
+| [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) | debug, crash, regression | An established failure mechanism and verified correction. |
+| [design-validation](skills/activated/design-validation/SKILL.md) | test plan, acceptance, coverage gaps | Checks matched to acceptance claims and their limits. |
+| [run-experiment](skills/activated/run-experiment/SKILL.md) | benchmark, compare, feasibility | A reproducible comparison and supported conclusion. |
+| [indefinite-loop](skills/activated/indefinite-loop/SKILL.md) | continuous optimization, metrics | Continuous batches of substantive experiments, retaining measured improvements. |
+| [coordinate-work](skills/activated/coordinate-work/SKILL.md) | delegate, parallelize, handoff | Bounded assignments and verified integration. |
+| [audit-and-resolve](skills/activated/audit-and-resolve/SKILL.md) | review, audit, PR findings | Substantiated findings and explicit dispositions. |
+| [operate-workflow](skills/activated/operate-workflow/SKILL.md) | deploy, migrate, resume job | Verified operational progress and safe continuation. |
 
 ## Keep progress across sessions
 
