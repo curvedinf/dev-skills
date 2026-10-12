@@ -67,7 +67,9 @@ Use `./agents/tmp/` for disposable files. Always keep `/agents/tmp/` in the root
 
 Self-improvement: enabled.
 
-During skill-assisted work, notice user corrections, recurring friction, workflow gaps, and verified reusable lessons. **Before task completion**, assess that evidence and apply [refine-skill](skills/passive/refine-skill/SKILL.md) when a reusable correction is warranted. Preserve task scope and prior requirements; no evidence means no edit. This completion check is required while enabled, even when skill authoring was not the main task. Set `Self-improvement: disabled.` to disable automatic refinement; explicit refinement requests still apply.
+**Always read and consider [refine-skill](skills/passive/refine-skill/SKILL.md).** It is a cross-cutting metaskill, not an optional route selected by task keywords.
+
+**At the end of each task, before the final response**, evaluate user corrections, recurring friction, workflow gaps, and verified reusable lessons. When self-improvement is enabled, apply one evidence-backed refinement pass within the task's write scope, validate any edits, and include them in the authorized task commit. No evidence means no edit; refinement does not recursively trigger itself. Set `Self-improvement: disabled.` to disable automatic edits, not the requirement to read and consider the metaskill. Explicit refinement requests still apply.
 
 ## Reference skill libraries
 
