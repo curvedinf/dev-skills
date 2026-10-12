@@ -12,6 +12,20 @@ Dev Skills is designed to be installed in your project or agent. Copy this promp
 Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/install-dev-skills/SKILL.md to install dev-skills.
 ```
 
+## Opinionated Structure
+
+Installing Dev Skills brings a particular way of organizing agent work. These conventions make its defaults explicit so you can judge how they fit your projects.
+
+| Convention | What it means here |
+| --- | --- |
+| [Process over implementation](skills/activated/design-skill/SKILL.md) | Short, stack-independent instructions standardize decisions while leaving implementation to the agent’s expertise. |
+| [Passive and activated skills](AGENTS.md#categories) | Like static and activated abilities in Magic: The Gathering: ongoing conventions apply once enabled; named workflows run on request. |
+| [Human and agent documentation](skills/passive/documentation-style/SKILL.md) | README explains the product and why to use it; AGENTS provides operational instructions. Context precedes action. |
+| [Durable working memory](skills/passive/scratch-space/SKILL.md) | Shared goal and experiment records live in Git-versioned `agents/scratch/`; disposable files go in ignored `agents/tmp/`. |
+| [Staged branch promotion](skills/passive/git-discipline/SKILL.md#branch-flow) | Developer-owned features flow through persistent developer branches, staging, and a stabilized release candidate before main. |
+| [Testing by interval](skills/passive/testing-doctrine/SKILL.md) | Focused iteration checks expand into handoff and release gates; expensive scenarios rotate, and compatible evidence is reused. |
+| [Evidence-driven refinement](skills/passive/refine-skill/SKILL.md) | An always-considered metaskill turns observed lessons into task-end procedure updates when self-improvement is enabled. |
+
 ## Conventions your agent follows throughout work
 
 Routine work should not require repeated reminders about scope, testing, commits, or lost context. Passive skills keep those expectations available throughout a task, giving your agent a shared basis for recurring decisions.
