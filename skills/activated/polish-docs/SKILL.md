@@ -9,6 +9,8 @@ metadata:
 
 Make the project's value and first-use path clear. Default to the README and directly related getting-started material.
 
+Treat `README.md` as human-facing, marketing-centric documentation: earn adoption through concrete benefits and evidence. Put computer-facing, utility-centric routing and operating instructions in `AGENTS.md`; do not turn it into marketing copy.
+
 For ongoing work, read and update [scratch records](../../passive/scratch-space/SKILL.md) in `agents/scratch/`: audience decisions, claim sources, visual conventions, and remaining onboarding friction.
 
 Use concrete, evidence-driven copy: no hand-waving, empty superlatives, or unsupported claims.

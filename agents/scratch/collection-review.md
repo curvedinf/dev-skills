@@ -9,3 +9,5 @@ Manual routing review: “fix crash” → diagnose-and-repair; “review PR” 
 Validation: all skill frontmatter, category/adapters, local skill links, catalog coverage, and whitespace. No external workflows or project test suites were executed.
 
 Correction: user clarified that agent-oriented routing belongs in AGENTS.md. Moved request-term routing and workflow-selection instructions there; README retains human-facing setup and outcome catalogs. Added this audience boundary to authoring guidance.
+
+Audience convention clarified: README is human-facing and marketing-centric (value, proof, adoption); AGENTS is computer-facing and utility-centric (routing, constraints, commands, decisions). Encoded in project authoring, skill design, documentation style, and README polishing. Marketing must remain evidence-driven.

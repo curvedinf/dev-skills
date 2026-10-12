@@ -9,6 +9,8 @@ metadata:
 
 Apply these defaults to the documentation being written or edited. Keep the page's purpose and the project's established terminology.
 
+`README.md` serves humans: make it marketing-centric, leading with concrete value, credible proof, and a clear next action. `AGENTS.md` serves computers: make it utility-centric, prioritizing precise instructions, routing, constraints, and decision rules. Keep promotional prose out of AGENTS and agent operating procedures out of the README; neither audience benefits from unsupported claims.
+
 For ongoing work, read and update [scratch records](../scratch-space/SKILL.md) in `agents/scratch/`: terminology, voice decisions, claim sources, and open questions.
 
 - Lead with what the reader needs to understand or accomplish. Use direct address and active verbs; put prerequisites before actions and recognizable results after them.

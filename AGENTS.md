@@ -42,7 +42,7 @@ Switch workflows when the needed outcome changes, carrying the same goal record 
 
 Use [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) for requested creation or refinement.
 
-- Keep agent routing and execution instructions in `AGENTS.md` or skills; the README serves human discovery and setup.
+- `README.md` is for humans and is marketing-centric: communicate concrete value, credible proof, and a clear path to adoption. `AGENTS.md` is for computers and is utility-centric: provide precise routing, constraints, commands, and decision rules. Keep agent operating instructions out of the README and promotional prose out of AGENTS. Marketing remains evidence-driven, without exaggeration.
 - Keep only the intended outcome and critical choices where agent defaults should converge. Leave execution to the agent.
 - Remove tutorials, micromanagement, repeated policy, obvious advice, and speculative edge cases. Every sentence costs attention.
 - Prefer deletion or replacement to additional rules. Do not move unnecessary prose into references to make the entrypoint appear shorter.
