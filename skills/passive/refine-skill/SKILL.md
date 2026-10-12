@@ -17,6 +17,6 @@ Read and update [scratch records](../scratch-space/SKILL.md) in `agents/scratch/
 
 ## Enablement
 
-The consuming project's applicable `AGENTS.md` controls automatic refinement: `Self-improvement: enabled.` enables it; disabled or absent leaves it off. Explicit refinement requests still apply. Installation must not inherit the library's opt-in or expand write scope to global skills.
+Applicable `AGENTS.md` instructions control automatic refinement; a host-supported agent-wide setting supplies the default and a more specific project declaration overrides it. `Self-improvement: enabled.` enables it; disabled or absent leaves it off. Explicit refinement requests still apply. Installation must not inherit the library's opt-in or expand write scope to global skills.
 
 Beside an enabled declaration, link this skill and include: “Always read and consider refine-skill. At the end of each task, before the final response, apply one evidence-backed refinement pass when self-improvement is enabled.” The host must load that instruction; a passive category or discovery adapter alone does not enforce it. This is an agent-followed completion obligation, not a runtime callback or background service.
