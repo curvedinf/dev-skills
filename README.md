@@ -10,21 +10,17 @@ Enable **passive skills** for ongoing conventions, such as when to test or commi
 
 ## Install
 
-Choose where your conventions should live:
-
-| Scope | Installer | Result |
-| --- | --- | --- |
-| One project | [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md) | Skills copied into your project, with applicable guidance merged into its `AGENTS.md`. |
-| Across projects | [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md) | Skills in your agent's user-wide library, with shared guidance integrated into conventions skills. |
-
-Give your agent the installer link and your destination. For example:
+**Project-wide**
 
 ```text
-Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/project-install-dev-skills/SKILL.md
-to install dev-skills in this project and merge its applicable AGENTS.md guidance.
+Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/project-install-dev-skills/SKILL.md to install dev-skills in this project and merge applicable guidance into its AGENTS.md.
 ```
 
-For agent-wide installation, use the `agent-install-dev-skills` link above and name your agent host. Both workflows preserve existing customizations and record the installed revision. Self-improvement keeps the destination project's opt-in setting.
+**Agent-wide**
+
+```text
+Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/agent-install-dev-skills/SKILL.md to install dev-skills in your agent-wide skills directory and integrate its AGENTS.md guidance into your shared conventions skills.
+```
 
 ## Try a skill
 
