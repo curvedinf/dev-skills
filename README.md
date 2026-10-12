@@ -6,7 +6,7 @@ Install Markdown instructions for debugging, experiments, testing, Git, document
 
 ## Install
 
-Choose one option below and paste its prompt into your coding agent: project-wide for a setup shared with this repository, or agent-wide for your personal setup across projects.
+To install Dev skills, copy and paste either prompt below into your coding agent.
 
 **Project-wide — for this repository**
 
