@@ -22,6 +22,7 @@ For ongoing work, read and update [scratch records](../../passive/scratch-space/
 - **Minimal, not vague:** replace “use best practices” or “make it polished” with the few concrete choices that define the requested standard. Conciseness must not erase the process.
 - **Specific, not prescriptive:** normalize voice, structure, evidence, or decision criteria as relevant. Avoid tutorials, tool-by-tool instructions, arbitrary quotas, and repeated policy.
 - **Examples show the target:** use finished examples, not before/after comparisons by default. Demonstrate the distinguishing qualities together; an example of brevity alone does not demonstrate persuasive, evidence-driven writing. Label fictional examples and assumptions.
+- **Required user choices:** specify the question, what counts as an answer, and which work must wait. Asking is not receiving a choice; never turn missing input into a default. Honor an explicit selection already supplied for the task.
 - **Semantic density:** prefer precise verbs and established terms that encode the intended distinction. Preserve qualifiers, scope, and process; avoid cryptic shorthand, invented jargon, or stronger claims disguised as compression.
 - **Every sentence costs attention:** remove hand-waving, empty superlatives, speculative exceptions, and redundant explanations. Supporting files must earn their place, not conceal verbosity.
 

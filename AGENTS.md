@@ -11,7 +11,7 @@ Store skills in `skills/<passive|activated>/<name>/SKILL.md`. Frontmatter requir
 
 ## Installation
 
-Use [install-dev-skills](skills/activated/install-dev-skills/SKILL.md). Begin with the scope choice: **1. Project-wide** or **2. Agent-wide**. Install and verify, then ask about self-improvement and save the choice in the applicable `AGENTS.md`. Authoring this workflow does not execute it.
+Use [install-dev-skills](skills/activated/install-dev-skills/SKILL.md). For an unscoped request, the first response must ask **1. Project-wide** or **2. Agent-wide**, then stop until answered. Do not infer the choice from the current repository or begin installation while waiting. Install and verify, then ask about self-improvement and save the choice in the applicable `AGENTS.md`. Authoring this workflow does not execute it.
 
 ## Skill selection
 

@@ -1,6 +1,6 @@
 ---
 name: install-dev-skills
-description: Install dev-skills, project-wide skills, agent-wide skills, merge AGENTS.md. Ask for installation scope, copy the collection, integrate guidance, and finish with self-improvement opt-in.
+description: Install dev-skills, project-wide skills, agent-wide skills, merge AGENTS.md. First ask project-wide (1) or agent-wide (2) and wait for an explicit answer; then install and finish with self-improvement opt-in.
 metadata:
   category: activated
 ---
@@ -9,12 +9,28 @@ metadata:
 
 Install from [curvedinf/dev-skills](https://github.com/curvedinf/dev-skills), preserving existing instructions and customizations.
 
-1. **Ask where to install.** Begin by asking: “Where would you like Dev Skills installed? **1. Project-wide** — stored with this repository and shared with collaborators. **2. Agent-wide** — in your agent’s personal skill library for use across projects.” Wait for the selection before destination-dependent work; do not silently choose a default. An explicit option already supplied for this installation satisfies this question.
-2. **Inspect the destination.** For option 1, read applicable project instructions, skills, and Git state; resolve the project root and existing layout, defaulting to `agents/skills/<passive|activated>/<name>/`. For option 2, resolve the selected host’s configured user-wide skill directory, discovery format, and existing conventions skills. Do not mistake the current project’s `agents/` for a global directory; resolve host ambiguity before writing.
-3. **Acquire and reconcile.** Fetch the requested revision, otherwise upstream `main`, and record the resolved commit. Read source `AGENTS.md`; copy complete skill folders, adapters, supporting resources, and license attribution. Exclude upstream `.git`, scratch history, and temporary files. Preserve category layout where supported; when flattening, map destinations and repair inter-skill links. Merge updates against the prior source revision and local customizations; inspect unknown same-name collisions before replacement. Keep changes recoverable and reinstallations idempotent.
-4. **Integrate guidance for the chosen scope.** Apply the destination rules below. Merge by topic, preserve explicit target policy, deduplicate equivalent guidance, and report unresolved conflicts. Adapt repository-specific assumptions and repair imported relative links, using revision-pinned source permalinks for uncopied material. Keep activated workflows deliberate and link passive conventions within their scopes. Always wire `refine-skill` as a metaskill to read and consider at task end; preserve existing enablement until the final choice, never inherit upstream’s opt-in.
-5. **Verify and record.** Check inventory, frontmatter, invocation settings, resources, links, and request-term routing. Verify host discovery where available; distinguish installation from proven loading and report reload requirements. Record source URL/commit, destination mapping, adaptations, and conflicts in project `agents/scratch/dev-skills-install.md` for option 1, or a maintenance reference beside the conventions skill for option 2. Installing Git guidance does not itself authorize committing or publishing the installation; follow existing authorization.
-6. **Ask the final setup question.** After installation and verification, ask: “Would you like skill self-improvement enabled? It refines skills from corrections and reusable lessons at task end.” Name the scope and exact `AGENTS.md` to update; explain this installer requires the final opt-in choice. For option 1 use the project file; for option 2 use a host-supported agent-wide `AGENTS.md`, or ask which project file should hold the choice if no global file is loaded. Set `Self-improvement: enabled.` for yes or `Self-improvement: disabled.` for no. Retain the installed `refine-skill` link and task-end check, reconcile duplicate declarations, and verify the saved choice. Project declarations override agent-wide defaults. No answer preserves the prior setting and leaves the choice pending; an explicit choice already supplied satisfies the question.
+## Required opening: ask, then wait
+
+After reading this skill, your first response to an unscoped installation request must ask:
+
+> Where would you like Dev Skills installed?
+>
+> 1. **Project-wide** — in the target repository, shared with collaborators.
+> 2. **Agent-wide** — in your agent’s personal skill library, available across projects.
+>
+> Reply **1** or **2**. This installer requires your choice before proceeding.
+
+Ask through an interactive question tool or a normal reply. **Stop here until the user answers.** Sending a question is not receiving a choice: do not inspect destinations, clone/download the collection, copy files, or modify instructions while waiting. A tool returning no answer, a preselected option, or elapsed time leaves the choice pending.
+
+Do not infer scope from the working directory, an open repository, the agent host, an existing installation, or the phrase “install dev-skills.” Skip the question only if the user has explicitly selected **project-wide**, **agent-wide**, **1**, or **2** for this installation; acknowledge that selection before proceeding. If the answer is ambiguous, clarify it. Record the selected scope in the installation record.
+
+## After the scope is selected
+
+1. **Inspect the destination.** For option 1, read applicable project instructions, skills, and Git state; resolve the project root and existing layout, defaulting to `agents/skills/<passive|activated>/<name>/`. For option 2, resolve the selected host’s configured user-wide skill directory, discovery format, and existing conventions skills. Do not mistake the current project’s `agents/` for a global directory; resolve host ambiguity before writing.
+2. **Acquire and reconcile.** Fetch the requested revision, otherwise upstream `main`, and record the resolved commit. Read source `AGENTS.md`; copy complete skill folders, adapters, supporting resources, and license attribution. Exclude upstream `.git`, scratch history, and temporary files. Preserve category layout where supported; when flattening, map destinations and repair inter-skill links. Merge updates against the prior source revision and local customizations; inspect unknown same-name collisions before replacement. Keep changes recoverable and reinstallations idempotent.
+3. **Integrate guidance for the chosen scope.** Apply the destination rules below. Merge by topic, preserve explicit target policy, deduplicate equivalent guidance, and report unresolved conflicts. Adapt repository-specific assumptions and repair imported relative links, using revision-pinned source permalinks for uncopied material. Keep activated workflows deliberate and link passive conventions within their scopes. Always wire `refine-skill` as a metaskill to read and consider at task end; preserve existing enablement until the final choice, never inherit upstream’s opt-in.
+4. **Verify and record.** Check inventory, frontmatter, invocation settings, resources, links, and request-term routing. Verify host discovery where available; distinguish installation from proven loading and report reload requirements. Record source URL/commit, destination mapping, adaptations, and conflicts in project `agents/scratch/dev-skills-install.md` for option 1, or a maintenance reference beside the conventions skill for option 2. Installing Git guidance does not itself authorize committing or publishing the installation; follow existing authorization.
+5. **Ask the final setup question.** After installation and verification, ask: “Would you like skill self-improvement enabled? It refines skills from corrections and reusable lessons at task end.” Name the scope and exact `AGENTS.md` to update; explain this installer requires the final opt-in choice. For option 1 use the project file; for option 2 use a host-supported agent-wide `AGENTS.md`, or ask which project file should hold the choice if no global file is loaded. Set `Self-improvement: enabled.` for yes or `Self-improvement: disabled.` for no. Retain the installed `refine-skill` link and task-end check, reconcile duplicate declarations, and verify the saved choice. Project declarations override agent-wide defaults. No answer preserves the prior setting and leaves the choice pending; an explicit choice already supplied satisfies the question.
 
 ## Destination rules
 
