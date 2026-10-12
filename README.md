@@ -1,8 +1,8 @@
-# Dev skills
+# Dev Skills
 
 **A library of reusable workflow skills for coding agents.**
 
-Different coding agents make different choices about when to test, what to commit, how to investigate failures, and what to remember. Dev Skills puts those decisions into reusable Markdown instructions, so you can establish your working conventions once instead of explaining them again in every project and session.
+Different coding agents make different choices about when to test, what to commit, how to investigate failures, and what to remember. Dev Skills normalizes those decisions into reusable Markdown instructions, so you can establish your working conventions once instead of explaining them again in every project and session.
 
 ## Install
 
