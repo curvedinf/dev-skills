@@ -11,6 +11,8 @@ Apply these conventions during repository work. When enabled, the task-completio
 
 ## Task completion
 
+Apply [testing-doctrine](../testing-doctrine/SKILL.md) when available: focused checks during iteration, routine and triggered coverage at handoff, bounded staging rotation, and complete compatible release evidence before promotion. Standalone, follow the project's equivalent gates; commit or push success never substitutes for acceptance.
+
 - **Working directly on `main`:** commit the task's changes locally after each completed work task. Push only when explicitly requested.
 - **Working on a persistent developer branch:** commit and push after each completed work task, then verify the remote ref. No repeated permission request is needed.
 - Keep automatic task commits scoped to that task and its durable notes, preserving unrelated pending work. Skip empty commits for tasks with no changes. These defaults do not authorize merging a feature branch or promoting staging or a release candidate; follow the requested workflow for those branches.
