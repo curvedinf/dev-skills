@@ -11,12 +11,38 @@ Store skills in `skills/<passive|activated>/<name>/SKILL.md`. Frontmatter requir
 
 ## Skill selection
 
-Use the [request-term catalog](README.md#choose-what-to-read) and skill descriptions to choose what to read. Match the requested outcome, not a keyword alone. Load applicable passive conventions and the selected workflow; follow related links only when needed. Keep one shared goal record across transitions.
+Scan the request terms below or a skill’s frontmatter `description`. Load the workflow matching the requested outcome and only the passive conventions enabled for that work. A keyword is a routing hint, not permission to start another task.
+
+- **Testing:** `testing-doctrine` decides when and how broadly to test; `design-validation` designs the checks; `diagnose-and-repair` investigates a failing behavior.
+- **Improvement:** `run-experiment` answers a bounded comparison; `indefinite-loop` repeats experiment batches only when continuous work is requested.
+- **Documentation:** `documentation-style` shapes ordinary edits; `polish-docs` redesigns the first-use experience.
+- **Delivery:** `git-discipline` governs repository changes; `operate-workflow` handles external operations; `audit-and-resolve` assesses findings; `coordinate-work` manages assignments.
+
+Switch workflows when the needed outcome changes, carrying the same goal record forward. Cross-links provide related guidance; they do not require loading the whole collection or invoking every linked workflow.
+
+| Request terms | Read |
+| --- | --- |
+| claims, citations, uncertainty | [evidence-discipline](skills/passive/evidence-discipline/SKILL.md) |
+| scope, requirements, ownership | [contract-discipline](skills/passive/contract-discipline/SKILL.md) |
+| commit, push, merge, branches | [git-discipline](skills/passive/git-discipline/SKILL.md) |
+| test cadence, nightly, release gates | [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) |
+| wording, terminology, examples | [documentation-style](skills/passive/documentation-style/SKILL.md) |
+| checkpoint, resume, history | [scratch-space](skills/passive/scratch-space/SKILL.md) |
+| create skill, refine, consolidate | [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) |
+| README, onboarding, quickstart | [polish-docs](skills/activated/polish-docs/SKILL.md) |
+| debug, crash, regression | [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) |
+| test plan, acceptance, coverage gaps | [design-validation](skills/activated/design-validation/SKILL.md) |
+| benchmark, compare, feasibility | [run-experiment](skills/activated/run-experiment/SKILL.md) |
+| continuous optimization, metrics | [indefinite-loop](skills/activated/indefinite-loop/SKILL.md) |
+| delegate, parallelize, handoff | [coordinate-work](skills/activated/coordinate-work/SKILL.md) |
+| review, audit, PR findings | [audit-and-resolve](skills/activated/audit-and-resolve/SKILL.md) |
+| deploy, migrate, resume job | [operate-workflow](skills/activated/operate-workflow/SKILL.md) |
 
 ## Authoring
 
 Use [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) for requested creation or refinement.
 
+- Keep agent routing and execution instructions in `AGENTS.md` or skills; the README serves human discovery and setup.
 - Keep only the intended outcome and critical choices where agent defaults should converge. Leave execution to the agent.
 - Remove tutorials, micromanagement, repeated policy, obvious advice, and speculative edge cases. Every sentence costs attention.
 - Prefer deletion or replacement to additional rules. Do not move unnecessary prose into references to make the entrypoint appear shorter.
