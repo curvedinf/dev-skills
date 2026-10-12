@@ -12,10 +12,10 @@ Establish the mechanism before choosing the repair. An investigation-only reques
 For ongoing work, read and update [scratch records](../../passive/scratch-space/SKILL.md) in `agents/scratch/`: reproductions, rejected explanations, repair attempts, and unresolved evidence.
 
 1. Establish expected behavior and reproduce the reported symptom in its relevant context. Retain the failing result and candidate identity; distinguish a product defect from a broken fixture, environment, or expectation.
-2. Form a falsifiable explanation and seek evidence that separates it from alternatives. Trace the affected boundaries and compare working cases. Reduce an order-dependent failure without removing the condition that causes it.
-3. Use the supported mechanism to choose a bounded correction. Change one causal concern at a time; avoid bundling speculative fixes or unrelated cleanup.
+2. Form a falsifiable hypothesis and seek discriminating evidence. Trace the affected boundaries and compare working cases. Minimize order-dependent reproductions without erasing the causal sequence.
+3. Derive a scoped correction from the demonstrated mechanism. Change one causal concern at a time; avoid bundling speculative fixes or unrelated cleanup.
 4. Re-run the original reproduction and relevant adjacent checks. Preserve its meaningful inputs and acceptance strength. If an expectation itself was wrong, justify that correction separately.
-5. Report the mechanism, correction, retained evidence, and remaining uncertainty. A failed repair returns to diagnosis rather than accumulating another guess.
+5. Report the mechanism, correction, retained evidence, and remaining uncertainty. A failed repair reopens diagnosis; do not stack speculative fixes.
 
 Prefer deterministic regression coverage. For intermittent defects, retain the failing observations and compare under equivalent conditions; one quiet run does not prove absence. If reproduction or testing is unavailable, distinguish static evidence and unverified repairs from demonstrated fixes. Stop speculative repair and name the missing evidence.
 

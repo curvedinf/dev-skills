@@ -7,15 +7,15 @@ metadata:
 
 # Coordinate work
 
-Split at useful ownership and interface boundaries. Keep tightly coupled work together; parallelism is a choice, not the goal.
+Partition by ownership and interfaces. Keep tightly coupled work together; parallelism is a choice, not the goal.
 
 For ongoing work, read and update [scratch records](../../passive/scratch-space/SKILL.md) in `agents/scratch/`: assignment ownership, dependencies, separate contributor records, and integration status.
 
-1. Establish the shared outcome, acceptance criteria, source baseline, and dependency order. Name the integration owner.
-2. Give each assignment a bounded objective, owned files or artifacts, interface expectations, available inputs, and required return evidence. Provide enough context to work without reconstructing the conversation.
-3. Prepare authorized execution environments before dispatch. Separate writable outputs, preserve required uncommitted inputs, and allocate shared resources. Parallelize only assignments that can proceed without conflicting edits or measurements.
-4. Reconcile returned deltas against their actual starting state. Check interface changes, evidence, and unresolved decisions; reassign or clarify the affected work when assumptions break.
-5. Combine authorized changes at meaningful dependency milestones and validate the real producer/consumer interactions. Report what is reviewed, integrated, verified, and still pending.
+1. Establish the shared outcome, acceptance criteria, source baseline, and dependency order. Assign integration ownership.
+2. Give each assignment a bounded objective, owned files or artifacts, interface expectations, available inputs, and required return evidence. Make each handoff self-contained.
+3. Prepare authorized execution environments before dispatch. Separate writable outputs, preserve required uncommitted inputs, and allocate shared resources. Parallelize only noninterfering assignments.
+4. Reconcile returned deltas against their source baseline. Check interface changes, evidence, and unresolved decisions; reassign or clarify the affected work when assumptions break.
+5. Combine authorized changes at meaningful dependency milestones and validate end-to-end interfaces. Report what is reviewed, integrated, verified, and still pending.
 
 Planning does not authorize delegation or integration. When contributors or isolation are unavailable, execute the same assignments sequentially and state the limitation. Passing isolated checks does not establish combined behavior.
 

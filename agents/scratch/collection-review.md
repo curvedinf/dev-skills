@@ -11,3 +11,5 @@ Validation: all skill frontmatter, category/adapters, local skill links, catalog
 Correction: user clarified that agent-oriented routing belongs in AGENTS.md. Moved request-term routing and workflow-selection instructions there; README retains human-facing setup and outcome catalogs. Added this audience boundary to authoring guidance.
 
 Audience convention clarified: README is human-facing and marketing-centric (value, proof, adoption); AGENTS is computer-facing and utility-centric (routing, constraints, commands, decisions). Encoded in project authoring, skill design, documentation style, and README polishing. Marketing must remain evidence-driven.
+
+Precision pass: reviewed AGENTS.md and all 15 skills for denser wording. Used established terms such as discriminating evidence, selection bias, revisit criteria, and retry deduplication. Preserved processes, examples, routing descriptions, and policy qualifiers; rejected compression that would turn a suggested cadence into a requirement or imply review certification. Added semantic-density guidance to authoring. Packaging and link checks passed; no runtime behavior evaluation was performed.

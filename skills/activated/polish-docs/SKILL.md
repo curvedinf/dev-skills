@@ -15,10 +15,10 @@ For ongoing work, read and update [scratch records](../../passive/scratch-space/
 
 Use concrete, evidence-driven copy: no hand-waving, empty superlatives, or unsupported claims.
 
-1. Review the current documentation and project. Identify the intended newcomer, the concrete value offered, and friction on the path to first use.
+1. Review the current documentation and project. Identify the intended newcomer, the concrete value offered, and onboarding friction.
 2. Compare introductions from successful projects with similar audiences. Choose relevant patterns to adapt; [reference examples](references/patterns.md) provide starting points.
-3. Build the opening around a desirable outcome: a benefit-led headline, a sentence explaining what the project is and why this audience would choose it, concrete proof, and one primary next action.
-4. Sequence the page around the reader's decision: “Is this for me?” → “Why this?” → “Can I trust it?” → “How do I start?” Use a relevant example or demo as proof, address material adoption concerns near the action, then lead through a quickstart to a useful result. Link deeper reference and contributor material afterward.
+3. Build the opening around a desirable outcome: a benefit-led headline, a positioning sentence identifying the project and its audience-specific benefit, concrete proof, and one primary next action.
+4. Follow the reader's adoption sequence: “Is this for me?” → “Why this?” → “Can I trust it?” → “How do I start?” Use a relevant example or demo as proof, address adoption barriers beside the call to action, then lead through a quickstart to a useful result. Link deeper reference and contributor material afterward.
 5. Apply a coherent visual treatment using the conventions below and the existing documentation platform.
 6. Walk through the revised experience as a newcomer, checking claims, instructions, and rendered presentation as the task permits. Resolve remaining friction before handing it back.
 
@@ -29,7 +29,7 @@ Use direct, reader-centered voice and the audience's terminology. Put proof besi
 Visual polish should make identity, behavior, and evidence easier to recognize and inspect.
 
 - **Opening:** compose a compact wordmark, concrete value proposition, primary action, and real example or product image. Restrained gradients or illustration can establish identity without competing with the content.
-- **Visual proof:** use crisp screenshots, annotated diagrams, or short demonstrations of supported behavior. Frame them consistently and caption what they establish; do not imply functionality with invented product imagery.
+- **Visual proof:** use crisp screenshots, annotated diagrams, or short demonstrations of supported behavior. Use consistent framing and evidence-specific captions; do not imply functionality with invented product imagery.
 - **Consistency:** use a small palette, one recognizable icon style, and consistent spacing and borders. Keep reading surfaces quiet, with clear hierarchy and accessible contrast; reserve expressive decoration for the opening and transitions.
 - **Useful components:** use icon cards for distinct routes, labeled code panels with copy controls where supported, and selective line highlighting. Keep commands and results distinct; use motion only to explain behavior or acknowledge interaction.
 - **Trust signals:** place supported versions near installation, methodology beside benchmarks, and release status beside downloads. Link the license, changelog, and relevant limitations. Use a few meaningful badges, not a wall of implied endorsements.

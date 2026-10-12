@@ -1,11 +1,11 @@
 # Reusable process skills
 
-Skills normalize capable agents' default approaches across projects. They do not teach expertise or improve the agent. Trust the agent's judgment; specify only the conventions that matter.
+Skills standardize capable agents' working conventions across projects. They do not teach expertise or improve the agent. Trust the agent's judgment; specify only the conventions that matter.
 
 ## Categories
 
-- **Passive:** ongoing guidance within its stated scope once enabled, like an MTG static ability.
-- **Activated:** a workflow deliberately requested by name or intent, like an MTG activated ability. It may be finite or explicitly continuous.
+- **Passive:** scoped, persistent guidance once enabled, like an MTG static ability.
+- **Activated:** an explicitly requested workflow, like an MTG activated ability. It may be finite or explicitly continuous.
 
 Store skills in `skills/<passive|activated>/<name>/SKILL.md`. Frontmatter requires `name`, a concise `description`, and `metadata.category`. Names are unique across categories. Activated Codex adapters set `policy.allow_implicit_invocation: false` in `agents/openai.yaml`; directory names alone do not enforce activation.
 
@@ -13,12 +13,12 @@ Store skills in `skills/<passive|activated>/<name>/SKILL.md`. Frontmatter requir
 
 Scan the request terms below or a skill’s frontmatter `description`. Load the workflow matching the requested outcome and only the passive conventions enabled for that work. A keyword is a routing hint, not permission to start another task.
 
-- **Testing:** `testing-doctrine` decides when and how broadly to test; `design-validation` designs the checks; `diagnose-and-repair` investigates a failing behavior.
+- **Testing:** `testing-doctrine` governs test cadence and coverage; `design-validation` designs the checks; `diagnose-and-repair` investigates a failing behavior.
 - **Improvement:** `run-experiment` answers a bounded comparison; `indefinite-loop` repeats experiment batches only when continuous work is requested.
 - **Documentation:** `documentation-style` shapes ordinary edits; `polish-docs` redesigns the first-use experience.
 - **Delivery:** `git-discipline` governs repository changes; `operate-workflow` handles external operations; `audit-and-resolve` assesses findings; `coordinate-work` manages assignments.
 
-Switch workflows when the needed outcome changes, carrying the same goal record forward. Cross-links provide related guidance; they do not require loading the whole collection or invoking every linked workflow.
+Switch workflows when the objective changes; preserve the shared goal record. Cross-links provide related guidance; they do not require loading the whole collection or invoking every linked workflow.
 
 | Request terms | Read |
 | --- | --- |
@@ -43,9 +43,10 @@ Switch workflows when the needed outcome changes, carrying the same goal record 
 Use [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) for requested creation or refinement.
 
 - `README.md` is for humans and is marketing-centric: communicate concrete value, credible proof, and a clear path to adoption. `AGENTS.md` is for computers and is utility-centric: provide precise routing, constraints, commands, and decision rules. Keep agent operating instructions out of the README and promotional prose out of AGENTS. Marketing remains evidence-driven, without exaggeration.
-- Keep only the intended outcome and critical choices where agent defaults should converge. Leave execution to the agent.
+- Specify outcomes and consequential decision criteria; delegate execution mechanics.
+- Prefer precise verbs and established terms over explanatory padding; preserve scope and qualifiers.
 - Remove tutorials, micromanagement, repeated policy, obvious advice, and speculative edge cases. Every sentence costs attention.
-- Prefer deletion or replacement to additional rules. Do not move unnecessary prose into references to make the entrypoint appear shorter.
+- Prefer consolidation over rule accumulation. Do not hide verbosity in references.
 - Keep skills portable and self-contained. Add supporting files only for necessary task-specific material.
 - Check format and links; use behavioral evaluation when a consequential uncertainty warrants it.
 
@@ -53,7 +54,7 @@ Use [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md)
 
 Use [scratch-space](skills/passive/scratch-space/SKILL.md) for durable, Git-versioned task notes in `./agents/scratch/`. Never ignore this directory; include relevant note updates when committing authorized work. Relevant skills read prior records and retain progress and evidence there; keep one record per goal rather than separate logs per skill. Read-only task scope still applies.
 
-Use `./agents/tmp/` for disposable files. Always keep `/agents/tmp/` in the root `.gitignore`; never force-add its contents. Preserve evidence needed for future work outside this directory.
+Use `./agents/tmp/` for disposable files. Always keep `/agents/tmp/` in the root `.gitignore`; never force-add its contents. Retain reusable evidence in durable storage.
 
 ## Self-improvement
 
