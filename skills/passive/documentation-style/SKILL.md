@@ -11,7 +11,7 @@ Apply these defaults to the documentation being written or edited. Preserve page
 
 `README.md` serves humans: make it marketing-centric, leading with concrete value, credible proof, and a clear next action. `AGENTS.md` serves computers: make it utility-centric, prioritizing precise instructions, routing, constraints, and decision rules. Keep promotional prose out of AGENTS and agent operating procedures out of the README; neither audience benefits from unsupported claims.
 
-For ongoing work, read and update [scratch records](../scratch-space/SKILL.md) in `agents/scratch/`: terminology, voice decisions, claim sources, and open questions.
+Use [scratch records](../scratch-space/SKILL.md) only for unresolved documentation work or evidence needed to resume it. Keep settled conventions in their canonical documentation; do not log prose edits.
 
 - **Identity, purpose, action:** identify what the product or feature is, the reader's problem it addresses, and how to use it. A capability list answers what, not why; connect capabilities to concrete needs without inventing benefits.
 - **Context before action:** introduce each section with the product-specific premise that explains why the reader is there. A heading, option comparison, or “paste this prompt” is not that premise. One shared introduction can orient several options; then give the applicable commands or prompts.

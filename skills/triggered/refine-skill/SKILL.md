@@ -15,7 +15,7 @@ Refine shared procedures from observed evidence, not the agent itself. As a cros
 2. **Patch the owner.** Read the affected skill and replace the passage responsible for the divergence. Preserve prior requirements; avoid recency-driven overcorrection and accumulating exceptions. Consolidate overlapping guidance while preserving resources and callers. Use [design-skill](../../activated/design-skill/SKILL.md) for a genuinely distinct new process; otherwise keep the change local.
 3. **Verify and finish.** Keep edits recoverable and within the task's write scope. Check packaging, links, and the affected decision; use behavioral evaluation for consequential uncertainty. For read-only or externally owned skills, report a proposed correction instead. Include edits in the authorized task commit and briefly report the refinement and its evidence; do not add routine no-op reports. This skill may refine itself, but maintenance does not trigger another pass.
 
-Read and update [scratch records](../../passive/scratch-space/SKILL.md) in `agents/scratch/` with evidence, the owning skill, and any deferred correction. Keep session history out of runtime instructions.
+Use [scratch records](../../passive/scratch-space/SKILL.md) only for deferred corrections or evidence needed for later work. Once a lesson is encoded in its owning skill, do not also log the refinement in scratch. Keep session history out of runtime instructions.
 
 ## Enablement
 

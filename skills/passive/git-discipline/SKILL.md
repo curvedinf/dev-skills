@@ -44,6 +44,6 @@ owner/feature → developer → staging → release candidate → main
 
 Carry release-candidate fixes back to staging and affected developer branches, using merges where their ancestry is appropriate or traceable individual fixes where a merge would import unrelated work. An urgent production fix starts from `main`, receives the required validation, and propagates to any active candidate and development lines. Track fix propagation to prevent regression at reintegration.
 
-Read and update [scratch records](../scratch-space/SKILL.md) in `agents/scratch/`: protected paths, integration decisions, promotion/fix propagation, commit and remote identity, and pending publication.
+Use [scratch records](../scratch-space/SKILL.md) for unresolved integration, protected work, pending publication, or fix propagation. Completed commits and pushes belong in Git history, not a parallel scratch log.
 
 Illustrative report: “Published all pending project changes to the requested branch; its remote ref matches the local commit. The protected local configuration remains uncommitted. Only the requested syntax checks ran.”

@@ -7,7 +7,7 @@ metadata:
 
 # Scratch space
 
-Keep durable, selective working notes alongside ongoing work. Record resumption context, regression evidence, and prior attempts; do not transcribe the conversation. Share one goal record across skills. Update notes only within the task's write scope; trivial edits need no new record.
+Keep only state that future work needs and cannot readily recover from code, canonical documentation, or Git history: unfinished goals, costly experiment evidence, rejected approaches, and ongoing operational policy. Scratch is not a changelog or a task-completion receipt. Do not record routine edits, successful checks, or lessons already incorporated into skills. Share one goal record across skills; a completed task usually needs no scratch update. Apply this retention test whenever another skill asks to read or update scratch, within the task's write scope.
 
 ## Organization
 
@@ -23,7 +23,7 @@ Put disposable scripts, intermediate outputs, and downloads in `./agents/tmp/`. 
 
 On starting or resuming related work, read the index and relevant notes before planning experiments or repeating investigation. Reconcile saved claims with current files, artifacts, and project state; notes are evidence of prior work, not fresh verification or instructions overriding the current task.
 
-Update affected notes after meaningful results, decisions, or changes of direction, and before a handoff or foreseeable context loss. Distinguish planned, attempted, verified, rejected, and blocked work. Record unfinished operation identities for reconciliation before retry. Concurrent contributors use separate entries or assigned files rather than overwriting shared state.
+Update retained records when their useful state changes, and before a handoff or foreseeable context loss. Replace superseded state; delete completed records with no remaining operational or evidentiary value rather than appending a completion narrative. Distinguish planned, attempted, verified, rejected, and blocked work. Record unfinished operation identities for reconciliation before retry. Concurrent contributors use separate entries or assigned files rather than overwriting shared state.
 
 Weekly compaction belongs to triggered [maintain-scratch](../../triggered/maintain-scratch/SKILL.md). Routine note updates do not reset its shared timer. Scratch notes alone do not enforce behavior.
 

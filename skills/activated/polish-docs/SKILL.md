@@ -11,7 +11,7 @@ Make the project's value and first-use path clear. Default to the README and dir
 
 Treat `README.md` as human-facing, marketing-centric documentation: earn adoption through concrete benefits and evidence. Put computer-facing, utility-centric routing and operating instructions in `AGENTS.md`; do not turn it into marketing copy.
 
-For ongoing work, read and update [scratch records](../../passive/scratch-space/SKILL.md) in `agents/scratch/`: audience decisions, claim sources, visual conventions, and remaining onboarding friction.
+Use [scratch records](../../passive/scratch-space/SKILL.md) only for unresolved documentation work or evidence needed to resume it. Keep settled conventions in their canonical documentation; do not log prose edits.
 
 Use concrete, evidence-driven copy: no hand-waving, empty superlatives, or unsupported claims.
 

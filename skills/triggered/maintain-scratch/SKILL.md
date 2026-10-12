@@ -1,6 +1,6 @@
 ---
 name: maintain-scratch
-description: Fresh project session, weekly scratch compaction, archive completed goals. On initial project-context load, compact durable notes if the shared seven-day timer is due.
+description: Fresh project session, weekly scratch compaction, remove obsolete notes. On initial project-context load, compact durable notes if the shared seven-day timer is due.
 metadata:
   category: triggered
 ---
@@ -13,8 +13,8 @@ metadata:
 
 When due:
 
-1. Read the index and goal records. Consolidate superseded entries into current summaries, preserving constraints, accepted state, decision rationale, rejected approaches and revisit criteria, unresolved work, and evidence links.
-2. Move completed or superseded detail worth retaining into `archive/`, preserving indexed outcomes and repairing links. Keep active records resumable. Promote lasting contracts to canonical documentation where appropriate; never discard sole copies of needed evidence or sweep unrelated temporary files.
+1. Read the index and records. Delete routine change logs, completion receipts, and duplicates of Git history or canonical guidance. Consolidate useful state into current summaries: unresolved work, operational policy, and evidence needed to avoid regression or redundant experiments.
+2. Archive only evidence with a concrete future use; do not move clutter into an archive by default. Keep active records resumable and repair links. Promote lasting contracts to canonical documentation where appropriate; never discard sole copies of needed evidence or sweep unrelated temporary files.
 3. Verify the index, links, and retained context, then stamp only this timer's completion. A completed review finding nothing to compact still counts. Include maintenance in the next authorized commit.
 
 Coordinate with active writers. Read-only, interrupted, or unsafe concurrent work leaves the timer unchanged; report the deferral. [scratch-space](../../passive/scratch-space/SKILL.md) governs ordinary note upkeep between passes, which does not reset this timer.

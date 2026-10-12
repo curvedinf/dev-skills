@@ -9,7 +9,7 @@ metadata:
 
 Skills normalize different agents' default approaches; they do not improve the agent or teach expertise. Specify outcome-defining conventions; trust execution to the agent.
 
-For ongoing work, read and update [scratch records](../../passive/scratch-space/SKILL.md) in `agents/scratch/`: user corrections, reference findings, design decisions, and validation gaps.
+Use [scratch records](../../passive/scratch-space/SKILL.md) for unresolved design decisions or costly evidence needed to resume work; completed skill creation needs no separate record.
 
 1. Identify the desired outcome and which defaults need standardization. Check existing ownership before creating a skill; route corrections to [refine-skill](../../triggered/refine-skill/SKILL.md).
 2. Inspect relevant peer skills or exemplary outputs. Extract specific conventions worth adopting, not their entire methodology. [Architecture references](references/architecture.md) provide starting points.
