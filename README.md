@@ -55,7 +55,7 @@ Some jobs need a deliberate process: a bug needs a reproduction, an experiment n
 
 | Skill | What it does |
 | --- | --- |
-| [install-dev-skills](skills/activated/install-dev-skills/SKILL.md) | Install the library in a project or agent-wide and merge its guidance. |
+| [install-dev-skills](skills/activated/install-dev-skills/SKILL.md) | Install Dev Skills in your project or agent’s personal skill directory and integrate its instructions. |
 | [design-time-triggered-skill](skills/activated/design-time-triggered-skill/SKILL.md) | Define periodic workflows with shared timers and explicit event triggers. |
 | [design-skill](skills/activated/design-skill/SKILL.md) | Create reusable process skills. |
 | [polish-docs](skills/activated/polish-docs/SKILL.md) | Rewrite and style documentation so newcomers understand the project and can start using it. |
