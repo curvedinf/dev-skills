@@ -9,6 +9,10 @@ Skills standardize capable agents' working conventions across projects. They do 
 
 Store skills in `skills/<passive|activated>/<name>/SKILL.md`. Frontmatter requires `name`, a concise `description`, and `metadata.category`. Names are unique across categories. Activated Codex adapters set `policy.allow_implicit_invocation: false` in `agents/openai.yaml`; directory names alone do not enforce activation.
 
+## Installation
+
+For a project-local installation, use [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md): copy upstream skills and merge applicable guidance into the target `AGENTS.md`. For user-wide installation, use [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md): install into the host's skill directory and merge guidance into discoverable conventions skills. These are explicit installation workflows; authoring them does not execute them.
+
 ## Skill selection
 
 Scan the request terms below or a skill’s frontmatter `description`. Load the workflow matching the requested outcome and only the passive conventions enabled for that work. A keyword is a routing hint, not permission to start another task.
@@ -22,6 +26,8 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 
 | Request terms | Read |
 | --- | --- |
+| install in project, vendor skills, merge AGENTS | [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md) |
+| install agent-wide, global skills, personal library | [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md) |
 | claims, citations, uncertainty | [evidence-discipline](skills/passive/evidence-discipline/SKILL.md) |
 | scope, requirements, ownership | [contract-discipline](skills/passive/contract-discipline/SKILL.md) |
 | commit, push, merge, branches | [git-discipline](skills/passive/git-discipline/SKILL.md) |

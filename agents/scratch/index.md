@@ -1,5 +1,7 @@
 # Scratch index
 
+- [Installation skills](install-skills.md): destinations, merge policy, and validation limits.
+
 - [Collection review](collection-review.md): routing, ownership, and redundancy review.
 
 - [Testing doctrine](testing-doctrine.md): Inferno baseline and portable interval decisions.

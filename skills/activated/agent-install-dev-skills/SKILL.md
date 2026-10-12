@@ -1,0 +1,17 @@
+---
+name: agent-install-dev-skills
+description: Install dev-skills agent-wide, global skills, personal skill library. Copy the collection and merge guidance into agent-level conventions skills; project-install-dev-skills handles a single project.
+metadata:
+  category: activated
+---
+
+# Install dev-skills for an agent
+
+Install from [curvedinf/dev-skills](https://github.com/curvedinf/dev-skills) into the selected agent's user-wide skill library. Apply conventions through discoverable skills, without replacing project instructions.
+
+1. **Resolve the host.** Inspect the agent's configured skill directory, discovery format, and existing instruction/conventions skills. Use the configured user-wide location; do not infer it from the current project's `agents/` directory. If multiple hosts are plausible and the request does not identify one, resolve that choice before writing.
+2. **Acquire and copy.** Fetch the requested revision, otherwise upstream `main`, and record its resolved commit. Read the source `AGENTS.md`; copy every complete skill folder, supporting resource, adapter, and license attribution. Exclude source `.git`, scratch history, and temporary files. Map category paths into the host's supported layout and rewrite inter-skill links if flattened; preserve activated invocation settings where supported.
+3. **Merge existing installations.** Compare incoming skills with their installed versions and prior source revision. Preserve local refinements and unrelated skills; inspect same-name collisions with unknown provenance. Keep updates recoverable and repeatable: reinstalling an unchanged revision must not duplicate instructions or reset customizations.
+4. **Integrate AGENTS guidance as skills.** Extend existing agent-level conventions/routing skills when they own the topic; otherwise create a passive `dev-skills-conventions` skill. Adapt source `AGENTS.md` into concise request-term routing, scoped passive defaults, authoring conventions, scratch policy, and reference-library guidance. Link the installed skills rather than reproducing their procedures. Preserve existing host guidance and project-specific precedence; remove source-repository assumptions and repair imported links or use revision-pinned source permalinks.
+5. **Wire loading and scope.** Give the conventions skill a description covering ongoing project work and configure supported discovery or startup references to load it. Do not claim continuous activation from a folder name or adapter alone; if automatic loading is unsupported, provide an explicit activation instruction. Scratch records remain in each consuming project's Git-versioned `agents/scratch/`, with ignored `agents/tmp/`, never in the global skill library. Self-improvement remains controlled by each project's applicable `AGENTS.md`; no declaration means off. Project opt-in does not expand write scope to global skills.
+6. **Verify and record.** Check the installed inventory, frontmatter, invocation policies, relative links, and conventions routing. Verify host discovery where available and report reload requirements or unsupported controls. Store source URL/commit, destination mapping, and merge decisions beside the conventions skill in a maintenance reference, not its runtime instructions. Report installation separately from proven loading. Do not modify the current project's policy or publish its Git state as a side effect.

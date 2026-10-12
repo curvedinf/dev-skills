@@ -1,0 +1,17 @@
+---
+name: project-install-dev-skills
+description: Install dev-skills in a project, vendor skills, merge project AGENTS.md. Copy the collection and integrate project-scoped guidance; agent-install-dev-skills handles agent-wide installation.
+metadata:
+  category: activated
+---
+
+# Install dev-skills in a project
+
+Install from [curvedinf/dev-skills](https://github.com/curvedinf/dev-skills) into the requested project, preserving its conventions and customizations.
+
+1. **Inspect the target.** Read applicable project instructions, existing skills, and Git state. Resolve the project root and current skill layout. Default to `agents/skills/<passive|activated>/<name>/` when no convention exists; explicit `AGENTS.md` links make these files usable without assuming host discovery.
+2. **Acquire a snapshot.** Fetch the requested revision, otherwise upstream `main`, into temporary space and record its resolved commit. Read that snapshot's `AGENTS.md` and inventory its skills. Copy complete skill folders, adapters, supporting resources, and license attribution. Do not import upstream `.git`, scratch history, or temporary files.
+3. **Reconcile installed files.** Preserve category layout where supported. If the host requires flat skill directories, map source paths to destinations and rewrite inter-skill links accordingly. Preserve internal resources. For an existing installation, compare the prior source revision, installed customizations, and incoming version; merge intentional local changes. If provenance is missing, inspect collisions before replacing anything. Repeated installation of the same revision must not duplicate files or guidance.
+4. **Merge project instructions.** Create or update the target's `AGENTS.md` by topic: skill routing, applicable passive conventions, authoring guidance, scratch policy, and reference libraries. Keep project-specific commands, constraints, and authority intact; adapt library-maintenance instructions to installed paths. Deduplicate equivalent rules and resolve conflicts in favor of explicit target policy, identifying genuinely unresolved choices. Link installed skills, enable passive conventions within their scopes, and keep activated workflows deliberate. Repair every imported relative link; retain a source permalink where material was not copied.
+5. **Preserve opt-in and storage policy.** Keep the target's self-improvement declaration; absent one, leave automatic refinement off and document how to enable its installed hook. Never inherit upstream's enabled declaration. Initialize or reuse Git-versioned `agents/scratch/` and its index; add `/agents/tmp/` to the root `.gitignore`. Do not ignore durable notes or rewrite unrelated ignore rules.
+6. **Verify and record.** Check skill names, frontmatter, category/invocation settings, resource links, and routing from representative request terms. Verify discovery when supported; distinguish file installation from host loading and report any reload requirement. Record source URL/commit, destination mapping, adaptations, and unresolved conflicts in `agents/scratch/dev-skills-install.md`. Report the installed scope and verification limits. Commit/push only under the target's applicable authorization; installing Git guidance does not authorize publishing the installation itself.

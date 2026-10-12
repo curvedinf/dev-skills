@@ -4,7 +4,25 @@
 
 Concise, stack-independent skills for how agents investigate, experiment, document, and retain progress. They normalize capable agents' default approaches while leaving implementation choices to their expertise.
 
-[Try a skill](#try-a-skill) · [Browse the collection](#the-collection) · [Create your own](#create-and-refine-skills)
+[Install](#install) · [Try a skill](#try-a-skill) · [Browse the collection](#the-collection) · [Create your own](#create-and-refine-skills)
+
+## Install
+
+Choose where your conventions should live:
+
+| Scope | Installer | Result |
+| --- | --- | --- |
+| One project | [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md) | Skills copied into your project, with applicable guidance merged into its `AGENTS.md`. |
+| Across projects | [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md) | Skills in your agent's user-wide library, with shared guidance integrated into conventions skills. |
+
+Give your agent the installer link and your destination. For example:
+
+```text
+Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/project-install-dev-skills/SKILL.md
+to install dev-skills in this project and merge its applicable AGENTS.md guidance.
+```
+
+For agent-wide installation, use the `agent-install-dev-skills` link above and name your agent host. Both workflows preserve existing customizations and record the installed revision. Self-improvement keeps the destination project's opt-in setting.
 
 ## Try a skill
 
@@ -59,6 +77,8 @@ Request these by file path, or by name when installed and supported by your host
 
 | Skill | Outcome |
 | --- | --- |
+| [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md) | Project-local skills and merged project guidance. |
+| [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md) | Agent-wide skills and discoverable shared conventions. |
 | [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) | A minimal reusable process or an evidence-backed refinement. |
 | [polish-docs](skills/activated/polish-docs/SKILL.md) | A credible, visually polished path to first use. |
 | [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) | An established failure mechanism and verified correction. |

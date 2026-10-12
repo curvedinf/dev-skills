@@ -1,0 +1,5 @@
+interface:
+  display_name: "Project Install Dev Skills"
+  short_description: "Install project skills and merge AGENTS guidance"
+policy:
+  allow_implicit_invocation: false

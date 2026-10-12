@@ -1,0 +1,5 @@
+interface:
+  display_name: "Agent Install Dev Skills"
+  short_description: "Install agent-wide skills and shared conventions"
+policy:
+  allow_implicit_invocation: false
