@@ -14,17 +14,18 @@ Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/install-d
 
 ## Opinionated Structure
 
-Installing Dev Skills brings a particular way of organizing agent work. These conventions make its defaults explicit so you can judge how they fit your projects.
+Dev Skills adapts established conventions for organizing agent work. These references explain the ideas behind the library’s defaults.
 
-| Convention | What it means here |
+| Convention | How Dev Skills applies it |
 | --- | --- |
-| [Process over implementation](skills/activated/design-skill/SKILL.md) | Short, stack-independent instructions standardize decisions while leaving implementation to the agent’s expertise. |
-| [Passive and activated skills](AGENTS.md#categories) | Like static and activated abilities in Magic: The Gathering: ongoing conventions apply once enabled; named workflows run on request. |
-| [Human and agent documentation](skills/passive/documentation-style/SKILL.md) | README explains the product and why to use it; AGENTS provides operational instructions. Context precedes action. |
-| [Durable working memory](skills/passive/scratch-space/SKILL.md) | Shared goal and experiment records live in Git-versioned `agents/scratch/`; disposable files go in ignored `agents/tmp/`. |
-| [Staged branch promotion](skills/passive/git-discipline/SKILL.md#branch-flow) | Developer-owned features flow through persistent developer branches, staging, and a stabilized release candidate before main. |
-| [Testing by interval](skills/passive/testing-doctrine/SKILL.md) | Focused iteration checks expand into handoff and release gates; expensive scenarios rotate, and compatible evidence is reused. |
-| [Evidence-driven refinement](skills/passive/refine-skill/SKILL.md) | An always-considered metaskill turns observed lessons into task-end procedure updates when self-improvement is enabled. |
+| [Agent Skills format](https://agentskills.io/specification) | Portable Markdown skill packages with metadata, instructions, and supporting resources. |
+| [Progressive disclosure](https://agentskills.io/specification#progressive-disclosure) | Request terms identify relevant skills before an agent loads their full instructions. |
+| [Separate human and agent documentation](https://agents.md/#why-agents-md) | README explains the product and its value; AGENTS contains operational instructions. |
+| [Diátaxis](https://diataxis.fr/) | Documentation distinguishes tutorials, how-to guides, reference, and explanation by the reader’s need. |
+| [Persistent agent progress](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | Git-versioned goal and experiment records carry context across sessions. This project keeps them in `agents/scratch/`. |
+| [Topic and integration branches](https://git-scm.com/docs/gitworkflows) | Our adaptation promotes developer-owned features through developer branches, staging, a release candidate, and main. |
+| [The practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) | Focused checks provide early feedback; broader integration and release checks establish behavior across boundaries. Our testing doctrine adds cadence and evidence-reuse rules. |
+| [Hermes skill maintenance](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills) | Our opt-in refinement pass captures corrections and reusable lessons in skills at task end. |
 
 ## Conventions your agent follows throughout work
 
