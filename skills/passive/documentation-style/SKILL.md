@@ -13,11 +13,13 @@ Apply these defaults to the documentation being written or edited. Preserve page
 
 For ongoing work, read and update [scratch records](../scratch-space/SKILL.md) in `agents/scratch/`: terminology, voice decisions, claim sources, and open questions.
 
-- Lead with what the reader needs to understand or accomplish. Use direct address and active verbs; put prerequisites before actions and recognizable results after them.
+- **Context before action:** orient the reader to what the section means for this product and why it matters before presenting choices, commands, or prompts. A heading or imperative alone does not supply that context. Use the shortest product-specific explanation that makes the action intelligible; preserve it when tightening prose. Then put prerequisites before actions and recognizable results after them.
 - Give each page a clear job. Tutorials teach through a result, how-to guides support a task, references specify behavior, and explanations develop understanding. Cross-link these page types; avoid mixing their purposes.
 - State concrete capabilities and limits. No hand-waving, empty superlatives, exaggerated benefits, or unsupported claims of ease. Label illustrative data and distinguish roadmap from shipped behavior.
 - Use descriptive sentence-case headings, short connected paragraphs, numbered sequences, and bullets for parallel choices. Use consistent names and units.
 - Make examples usable: label code blocks, distinguish input from output, and explain substitutions. Use descriptive links to canonical detail rather than duplicating it.
+
+Section introduction: “Dev Skills is designed to be installed in your project or agent. Copy the applicable prompt below into your coding agent and let it do the rest.” The first sentence establishes the product’s installation model; the second gives the action.
 
 Illustrative copy: “Export records as CSV. The export includes the active filters and excludes archived records.” A task heading could be “Export filtered records.”
 
