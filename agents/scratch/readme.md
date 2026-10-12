@@ -17,3 +17,5 @@ Readability correction: removed Try a skill, repeated setup explanations, scratc
 Installation context restored: each copy-paste prompt needs a concise explanation of destination and reach. Project-wide lives with the repository and supports sharing; agent-wide lives in the personal agent library for reuse across projects. Brevity must preserve the information needed to choose.
 
 Documentation lesson: context before action means establishing what a section means for this product and why the reader is there, not merely explaining option differences or issuing an imperative. Encoded in documentation-style with the user’s finished installation introduction, and in polish-docs as a newcomer reading check. Supersedes the earlier per-option explanation rule. User README edits preserved unchanged.
+
+Catalog revision: section introductions now explain the role of passive conventions and requested workflows in using this library. Replaced abstract outcome labels with concrete activities. Preserved the user’s title and install section byte-for-byte and left those pre-existing edits unstaged.

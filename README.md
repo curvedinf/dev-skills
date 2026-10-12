@@ -2,7 +2,7 @@
 
 **A library of reusable workflow skills for coding agents.**
 
-Install Markdown instructions for debugging, experiments, testing, Git, documentation, and progress tracking in a project or your agent’s skill directory. The workflows are stack-independent.
+Dev Skills packages development processes as Markdown instructions for coding agents. Its skills cover debugging, testing, Git, documentation, experiments, and progress tracking, with conventions you can reuse across projects and stacks.
 
 ## Install
 
@@ -24,35 +24,35 @@ Installs the skills in your agent’s personal skill directory and integrates sh
 Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/agent-install-dev-skills/SKILL.md to install dev-skills in your agent-wide skills directory and integrate its AGENTS.md guidance into your shared conventions skills.
 ```
 
-## Ongoing coding conventions
+## Conventions your agent follows throughout work
 
-Passive skills apply within their scope once enabled.
+Passive skills define how your agent handles recurring decisions—what to test, when to commit, and what to remember. Once enabled, they guide relevant work without a separate request each time.
 
-| Skill | Convention |
+| Skill | What it guides |
 | --- | --- |
-| [evidence-discipline](skills/passive/evidence-discipline/SKILL.md) | Keep claims proportional to the evidence. |
-| [contract-discipline](skills/passive/contract-discipline/SKILL.md) | Preserve agreed outcomes, constraints, and ownership. |
-| [git-discipline](skills/passive/git-discipline/SKILL.md) | Preserve working state and verify the full authorized publication. |
-| [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) | Match testing and evidence reuse to iteration, integration, and release. |
-| [documentation-style](skills/passive/documentation-style/SKILL.md) | Write concrete, reader-oriented documentation. |
-| [scratch-space](skills/passive/scratch-space/SKILL.md) | Preserve goal progress, experiment outcomes, and decisions across sessions. |
+| [evidence-discipline](skills/passive/evidence-discipline/SKILL.md) | Support claims with evidence and state what remains unverified. |
+| [contract-discipline](skills/passive/contract-discipline/SKILL.md) | Keep work aligned with your requirements and scope. |
+| [git-discipline](skills/passive/git-discipline/SKILL.md) | Preserve local work and follow branch, commit, and push conventions. |
+| [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) | Select checks for development, integration, and release. |
+| [documentation-style](skills/passive/documentation-style/SKILL.md) | Explain the product and reader context before giving instructions. |
+| [scratch-space](skills/passive/scratch-space/SKILL.md) | Save progress, decisions, and failed experiments for later sessions. |
 
-## Workflows you request
+## Workflows you ask your agent to run
 
-Activated skills run when you ask for them.
+Activated skills define a process for a specific job. Ask your agent to use one by name—for example, “Use polish-docs to rewrite this README”—and describe the result you want.
 
-| Skill | Outcome |
+| Skill | What it does |
 | --- | --- |
-| [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md) | Project-local skills and merged project guidance. |
-| [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md) | Agent-wide skills and discoverable shared conventions. |
-| [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) | A minimal reusable process or an evidence-backed refinement. |
-| [polish-docs](skills/activated/polish-docs/SKILL.md) | A credible, visually polished path to first use. |
-| [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) | An established failure mechanism and verified correction. |
-| [design-validation](skills/activated/design-validation/SKILL.md) | Checks matched to acceptance claims and their limits. |
-| [run-experiment](skills/activated/run-experiment/SKILL.md) | A reproducible comparison and supported conclusion. |
-| [indefinite-loop](skills/activated/indefinite-loop/SKILL.md) | Continuous batches of substantive experiments, retaining measured improvements. |
-| [coordinate-work](skills/activated/coordinate-work/SKILL.md) | Bounded assignments and verified integration. |
-| [audit-and-resolve](skills/activated/audit-and-resolve/SKILL.md) | Substantiated findings and explicit dispositions. |
-| [operate-workflow](skills/activated/operate-workflow/SKILL.md) | Verified operational progress and safe continuation. |
+| [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md) | Install the library in a project and merge its agent instructions. |
+| [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md) | Install the library for your agent to use across projects. |
+| [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) | Create reusable skills or refine them from observed problems. |
+| [polish-docs](skills/activated/polish-docs/SKILL.md) | Rewrite and style documentation so newcomers understand the project and can start using it. |
+| [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) | Reproduce a bug, identify its cause, and verify the fix. |
+| [design-validation](skills/activated/design-validation/SKILL.md) | Design tests that establish whether requirements are met. |
+| [run-experiment](skills/activated/run-experiment/SKILL.md) | Compare alternatives under controlled conditions. |
+| [indefinite-loop](skills/activated/indefinite-loop/SKILL.md) | Research and run successive experiment batches, keeping measured improvements. |
+| [coordinate-work](skills/activated/coordinate-work/SKILL.md) | Divide work among contributors and verify the combined result. |
+| [audit-and-resolve](skills/activated/audit-and-resolve/SKILL.md) | Review work, verify findings, and resolve authorized corrections. |
+| [operate-workflow](skills/activated/operate-workflow/SKILL.md) | Carry out deployments, migrations, and other operations, reconciling partial results before retrying. |
 
-[Authoring guide](AGENTS.md) · [Research notes](docs/skill-research.md) · [MIT license](LICENSE)
+[Skill design and references](AGENTS.md) · [Research notes](docs/skill-research.md) · [MIT license](LICENSE)
