@@ -13,3 +13,5 @@
 Durable project working notes belong here and are included in Git. Organize records by goal or topic and link them from this index as they are created. Disposable files belong in the ignored `../tmp/` directory.
 
 - [README](readme.md): audience, structure decisions, and validation scope.
+
+- [Disclosure policy](security-policy.md): approved disclosure conditions and unresolved privacy decisions.

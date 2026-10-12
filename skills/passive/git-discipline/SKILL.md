@@ -11,6 +11,8 @@ Apply these conventions during repository work. When enabled, the task-completio
 
 ## Task completion
 
+Before creating any commit, run [security-hygiene-check](../../triggered/security-hygiene-check/SKILL.md) on the final candidate; findings not covered by the project disclosure policy pause these commit/push defaults for the user’s decision.
+
 Use the project’s gates and [testing-doctrine](../testing-doctrine/SKILL.md) for validation cadence; publication never substitutes for acceptance.
 
 - **Working directly on `main`:** commit the task's changes locally after each completed work task. Push only when explicitly requested.

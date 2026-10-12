@@ -4,6 +4,7 @@ Each skill was considered separately against the reference-library instructions 
 
 | Skill | Sources inspected | Adopted principle | Deliberately not adopted |
 | --- | --- | --- | --- |
+| security-hygiene-check | Local design-skill, git-discipline, refine-skill, and bundled Codex skill-creator | Explicit event wiring, final-candidate review, and a required user disposition before mutation. | Implied approval from earlier push authorization, automatic redaction, and claims of installed Git-hook enforcement. |
 | maintain-scratch | Existing scratch-space maintenance procedure and the user's fresh-session/weekly requirements | Event-conditioned compaction, retained completion history, and preservation of durable evidence. | Per-task checks, background scheduler claims, and independent timer files. |
 | design-time-triggered-skill | Existing design-skill, scratch-space, and install-dev-skills procedures; the user's triggered category | Separate observation event from elapsed-time condition; share keyed completion records and wire actual host instructions. | Scheduler installation, replaying missed maintenance periods, and treating discovery as event dispatch. |
 | install-dev-skills | Bundled Codex `skill-installer/SKILL.md`; current collection layout and AGENTS.md | Explicit source revision, complete skill folders, destination inspection, and collision awareness; project guidance merges by topic. | Blind overwrites, agent-global destination defaults for project installs, and inheriting upstream self-improvement enablement. |

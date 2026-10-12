@@ -46,6 +46,7 @@ Some upkeep should happen without another request. Triggered skills run when a d
 
 | Skill | What triggers it |
 | --- | --- |
+| [security-hygiene-check](skills/triggered/security-hygiene-check/SKILL.md) | Before a commit; check for personal data and secrets, and ask how to handle findings. |
 | [refine-skill](skills/triggered/refine-skill/SKILL.md) | Completed skill use; apply lessons when self-improvement is enabled. |
 | [maintain-scratch](skills/triggered/maintain-scratch/SKILL.md) | Fresh project session with weekly compaction due in the shared timer file. |
 

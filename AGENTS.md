@@ -30,6 +30,7 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 | install dev-skills, project-wide, agent-wide | [install-dev-skills](skills/activated/install-dev-skills/SKILL.md) |
 | claims, citations, uncertainty | [evidence-discipline](skills/passive/evidence-discipline/SKILL.md) |
 | scope, requirements, ownership | [contract-discipline](skills/passive/contract-discipline/SKILL.md) |
+| pre-commit, PID/PII, secrets, privacy leaks | [security-hygiene-check](skills/triggered/security-hygiene-check/SKILL.md) |
 | commit, push, merge, branches | [git-discipline](skills/passive/git-discipline/SKILL.md) |
 | test cadence, nightly, release gates | [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) |
 | wording, terminology, examples | [documentation-style](skills/passive/documentation-style/SKILL.md) |
@@ -66,6 +67,10 @@ Use [design-skill](skills/activated/design-skill/SKILL.md) for creation and [ref
 Use [scratch-space](skills/passive/scratch-space/SKILL.md) for durable, Git-versioned task notes in `./agents/scratch/`. Never ignore this directory; include relevant note updates when committing authorized work. Relevant skills read prior records and retain progress and evidence there; keep one record per goal rather than separate logs per skill. Read-only task scope still applies.
 
 Use `./agents/tmp/` for disposable files. Always keep `/agents/tmp/` in the root `.gitignore`; never force-add its contents. Retain reusable evidence in durable storage.
+
+## Pre-commit security gate
+
+Before every project commit, including amendments and merges, run [security-hygiene-check](skills/triggered/security-hygiene-check/SKILL.md) on the final candidate after all edits. Apply the natural-language disclosure policy in `agents/scratch/security-policy.md`; findings outside its approved scope require an explicit user disposition before committing, even when commit/push permission already exists. Recheck changed candidates. This gate is independent of self-improvement enablement.
 
 ## Self-improvement
 
