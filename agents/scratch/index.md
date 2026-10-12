@@ -1,5 +1,7 @@
 # Scratch index
 
+- [Maintenance timer](maintenance.json): weekly compaction, checked on fresh project sessions.
+
 - [Installation skills](install-skills.md): destinations, merge policy, and validation limits.
 
 - [Collection review](collection-review.md): routing, ownership, and redundancy review.

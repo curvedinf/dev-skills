@@ -58,6 +58,8 @@ Use [design-skill](skills/activated/design-skill/SKILL.md) for creation and [ref
 
 ## Scratch space
 
+**Fresh-session startup:** on the first project-context load after an initial user prompt, read [scratch-space](skills/passive/scratch-space/SKILL.md) and check `agents/scratch/maintenance.json`. Perform its maintenance pass if seven days have elapsed since completion or no completion is recorded. Check once per project per fresh session, not per task or context-window compaction. Update the timer only after completing maintenance; prohibited or interrupted work stays due. This check applies independently of skill self-improvement enablement.
+
 Use [scratch-space](skills/passive/scratch-space/SKILL.md) for durable, Git-versioned task notes in `./agents/scratch/`. Never ignore this directory; include relevant note updates when committing authorized work. Relevant skills read prior records and retain progress and evidence there; keep one record per goal rather than separate logs per skill. Read-only task scope still applies.
 
 Use `./agents/tmp/` for disposable files. Always keep `/agents/tmp/` in the root `.gitignore`; never force-add its contents. Retain reusable evidence in durable storage.
