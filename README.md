@@ -2,11 +2,7 @@
 
 **A library of reusable workflow skills for coding agents.**
 
-Dev skills is a collection of Markdown instructions you install in a project or your agent's skill directory. The skills define how agents debug failures, run experiments, test changes, manage Git branches, write documentation, and record progress between sessions.
-
-Enable **passive skills** for ongoing conventions, such as when to test or commit. Invoke **activated skills** for specific jobs, such as polishing a README or running repeated optimization experiments. The workflows are stack-independent, so you can reuse them across projects.
-
-[Install](#install) · [Try a skill](#try-a-skill) · [Browse the collection](#the-collection) · [Create your own](#create-and-refine-skills)
+Install Markdown instructions for debugging, experiments, testing, Git, documentation, and progress tracking in a project or your agent’s skill directory. The workflows are stack-independent.
 
 ## Install
 
@@ -22,43 +18,9 @@ Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/project-i
 Use https://github.com/curvedinf/dev-skills/blob/main/skills/activated/agent-install-dev-skills/SKILL.md to install dev-skills in your agent-wide skills directory and integrate its AGENTS.md guidance into your shared conventions skills.
 ```
 
-## Try a skill
+## Ongoing coding conventions
 
-Clone this collection somewhere your agent can read:
-
-```sh
-git clone https://github.com/curvedinf/dev-skills.git
-```
-
-From that checkout, give your agent a task with an explicit skill path:
-
-```text
-Use skills/activated/polish-docs/SKILL.md to polish this project's README.
-Lead with its concrete value and give newcomers a working first-use example.
-```
-
-For another project, point to the skill's absolute path in your checkout and name the target project. The skill guides the process; the target project supplies its requirements and implementation details.
-
-Each skill is readable Markdown with its supporting files alongside it. To install selected skills, copy their complete folders to your agent host's skill directory. Installation and discovery depend on the host. Keep the collection's relative layout when using it by path; copy `scratch-space` alongside workflows that need durable progress.
-
-## The collection
-
-Two kinds of skills, modeled after abilities in *Magic: The Gathering*:
-
-| Passive · ongoing conventions | Activated · requested workflows |
-| --- | --- |
-| Apply within their scope once enabled, like static abilities. | Start when deliberately requested, like activated abilities. |
-| Example: preserve evidence and constraints throughout work. | Example: run a controlled experiment or polish a README. |
-
-### Passive skills
-
-Enable selected skills in the consuming project's `AGENTS.md` by linking them and stating their scope. For example, when this checkout is a sibling named `dev-skills`:
-
-```markdown
-During project work, follow
-[contract-discipline](../dev-skills/skills/passive/contract-discipline/SKILL.md)
-and [scratch-space](../dev-skills/skills/passive/scratch-space/SKILL.md).
-```
+Passive skills apply within their scope once enabled.
 
 | Skill | Convention |
 | --- | --- |
@@ -69,9 +31,9 @@ and [scratch-space](../dev-skills/skills/passive/scratch-space/SKILL.md).
 | [documentation-style](skills/passive/documentation-style/SKILL.md) | Write concrete, reader-oriented documentation. |
 | [scratch-space](skills/passive/scratch-space/SKILL.md) | Preserve goal progress, experiment outcomes, and decisions across sessions. |
 
-### Activated skills
+## Workflows you request
 
-Request these by file path, or by name when installed and supported by your host. Their included Codex adapters disable implicit invocation; passive adapters allow it. Directory names alone do not enforce either behavior.
+Activated skills run when you ask for them.
 
 | Skill | Outcome |
 | --- | --- |
@@ -87,36 +49,4 @@ Request these by file path, or by name when installed and supported by your host
 | [audit-and-resolve](skills/activated/audit-and-resolve/SKILL.md) | Substantiated findings and explicit dispositions. |
 | [operate-workflow](skills/activated/operate-workflow/SKILL.md) | Verified operational progress and safe continuation. |
 
-## Keep progress across sessions
-
-Skills consult and update shared goal records so later work can recover decisions, inspect results, and see which approaches were already rejected.
-
-```text
-agents/
-├── scratch/           Durable notes included in Git
-│   ├── index.md       Active goals and retained findings
-│   └── <goal>.md      Progress, evidence, decisions, next action
-└── tmp/               Disposable files, always Git-ignored
-```
-
-The [scratch-space convention](skills/passive/scratch-space/SKILL.md) keeps shared goal records in Git and disposable files out of it.
-
-The [indefinite-loop workflow](skills/activated/indefinite-loop/SKILL.md), for example, records its baseline, sequential experiment results, rejected directions, and accepted candidate here. It favors distinct structural hypotheses over repeated parameter tweaks. Continued execution still depends on the agent runtime; saved notes provide a resumption point.
-
-## Create and refine skills
-
-Use [design-and-refine-skill](skills/activated/design-and-refine-skill/SKILL.md) to capture the few decisions that should stay consistent across projects. Activated skills describe a process; passive skills establish ongoing conventions. Keep both concise, concrete, and grounded in observed needs.
-
-Self-improvement refines these procedures from user corrections and demonstrated lessons. It is enabled for this repository. To opt in elsewhere, add this to the consuming project's `AGENTS.md`, adjusting the link to your checkout:
-
-```markdown
-Self-improvement: enabled.
-
-After skill-assisted work exposes a reusable lesson, apply the
-[self-improvement hook](../dev-skills/skills/activated/design-and-refine-skill/SKILL.md#self-improvement-hook)
-within the task's write scope.
-```
-
-No declaration, or `Self-improvement: disabled.`, leaves automatic refinement off. This is an instruction for the working agent, not a background service.
-
-See [authoring conventions and reference libraries](AGENTS.md), [per-skill research notes](docs/skill-research.md), and the [license](LICENSE).
+[Authoring guide](AGENTS.md) · [Research notes](docs/skill-research.md) · [MIT license](LICENSE)
