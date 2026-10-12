@@ -15,14 +15,14 @@ For ongoing work, read and update [scratch records](../../passive/scratch-space/
 
 Use concrete, evidence-driven copy: no hand-waving, empty superlatives, or unsupported claims.
 
-1. Review the current documentation and project. Identify the intended newcomer, the concrete value offered, and onboarding friction.
+1. Read the project and documentation to establish the product, intended reader, and concrete problem it addresses. Distinguish supported benefits from inferred promises.
 2. Compare introductions from successful projects with similar audiences. Choose relevant patterns to adapt; [reference examples](references/patterns.md) provide starting points.
-3. Identify the product category, what it does, and how the reader uses it before relying on an abstract benefit or slogan. Build the opening around a desirable outcome: a benefit-led headline, a positioning sentence identifying the project and its audience-specific benefit, concrete proof, and one primary next action.
-4. Follow the reader's adoption sequence: “Is this for me?” → “Why this?” → “Can I trust it?” → “How do I start?” Use a relevant example or demo as proof, address adoption barriers beside the call to action, then lead through a quickstart to a useful result. Link deeper reference and contributor material afterward.
+3. Make the opening answer what this is, why the reader would use it, and how to start. Name the product category and connect its mechanism to the reader’s problem; neither a slogan nor a capability list supplies that explanation. Support the benefit with concrete evidence and one primary next action.
+4. Follow the reader's adoption sequence: “Is this for me?” → “Why this?” → “Can I trust it?” → “How do I start?” Use a relevant example or demo as proof, address adoption barriers beside the call to action, then provide the shortest complete first-use path. When copy-paste prompts suffice, use them without an additional walkthrough. Link deeper reference and contributor material afterward.
 5. Apply a coherent visual treatment using the conventions below and the existing documentation platform.
-6. Read the page in order as a newcomer without conversation context. Before each action, can the reader explain what this section means for the product and why they are being asked to act? Supply missing orientation, then verify claims, instructions, and rendered presentation as the task permits.
+6. Read the page in order as a newcomer without conversation context. Check separately: can the reader identify the product, explain why it is useful, understand why each section is relevant, and take the next action? Do not count a feature description as a reason to use it. Verify claims, instructions, and rendered presentation as the task permits.
 
-Use direct, reader-centered voice and the audience's terminology. Put proof beside each benefit; replace evaluative adjectives with observable behavior. Use descriptive benefit or task headings, avoiding generic labels such as “The collection”; and name the primary action by its payoff. Prefer one copyable example with labeled input, output, and substitutions. Keep deeper detail behind descriptive links. Introduce actions with product-specific context: what this section is about and why the reader needs it. “Choose an option” or “paste this prompt” gives direction without orientation. Establish the product’s usage model before presenting its options; a shared introduction can orient both. Cut repetition, never the premise that makes instructions intelligible. For ongoing prose work, use [documentation-style](../../passive/documentation-style/SKILL.md).
+Use direct, reader-centered voice and the audience's terminology. Put proof beside each benefit; replace evaluative adjectives with observable behavior. Use descriptive headings and concrete skill or feature descriptions. Introduce unfamiliar categories by the need they address before listing members. Put a product-specific orientation sentence before installation prompts or choices; a shared introduction can serve both. Preserve this context when cutting repetition. For ongoing prose work, use [documentation-style](../../passive/documentation-style/SKILL.md).
 
 ## Visual conventions
 
@@ -42,7 +42,7 @@ Illustrative opening for a fictional tool; assume the stated capabilities are su
 
 > **Find added, removed, and changed records in CSV exports.**
 >
-> Rowdiff compares recurring data exports by customer ID. Reordering rows does not count as a record change.
+> Recurring exports can reorder rows, making a line-by-line comparison misleading. Rowdiff is a CSV comparison tool that matches records by customer ID so you can identify actual record changes.
 >
 > **Review record changes**
 >

@@ -21,3 +21,5 @@ Documentation lesson: context before action means establishing what a section me
 Catalog revision: section introductions now explain the role of passive conventions and requested workflows in using this library. Replaced abstract outcome labels with concrete activities. Preserved the user’s title and install section byte-for-byte and left those pre-existing edits unstaged.
 
 Purpose correction: contents and usage alone did not explain why readers would adopt the library or use either category. Opening now names inconsistent agent defaults and repeated instruction as the problem; passive conventions reduce repeated reminders, activated workflows avoid rewriting procedures for each job. User installation text remains unchanged.
+
+Consolidated documentation conventions: identity, reader problem, mechanism, and next action must all be intelligible. Feature lists do not explain purpose; section context is distinct from option descriptions. Concision preserves these premises. Updated the finished Rowdiff example and newcomer review process to demonstrate and check the distinction. README unchanged during this skill-only refinement.

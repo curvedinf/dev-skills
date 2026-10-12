@@ -13,7 +13,9 @@ Apply these defaults to the documentation being written or edited. Preserve page
 
 For ongoing work, read and update [scratch records](../scratch-space/SKILL.md) in `agents/scratch/`: terminology, voice decisions, claim sources, and open questions.
 
-- **Context before action:** orient the reader to what the section means for this product and why it matters before presenting choices, commands, or prompts. A heading or imperative alone does not supply that context. Use the shortest product-specific explanation that makes the action intelligible; preserve it when tightening prose. Then put prerequisites before actions and recognizable results after them.
+- **Identity, purpose, action:** identify what the product or feature is, the reader's problem it addresses, and how to use it. A capability list answers what, not why; connect capabilities to concrete needs without inventing benefits.
+- **Context before action:** introduce each section with the product-specific premise that explains why the reader is there. A heading, option comparison, or “paste this prompt” is not that premise. One shared introduction can orient several options; then give the applicable commands or prompts.
+- **Concision preserves understanding:** cut repetition and redundant walkthroughs, not identity, rationale, or necessary context. Explain unfamiliar categories before listing their members. Use headings that name the content and descriptions that state concrete behavior.
 - Give each page a clear job. Tutorials teach through a result, how-to guides support a task, references specify behavior, and explanations develop understanding. Cross-link these page types; avoid mixing their purposes.
 - State concrete capabilities and limits. No hand-waving, empty superlatives, exaggerated benefits, or unsupported claims of ease. Label illustrative data and distinguish roadmap from shipped behavior.
 - Use descriptive sentence-case headings, short connected paragraphs, numbered sequences, and bullets for parallel choices. Use consistent names and units.
@@ -21,6 +23,6 @@ For ongoing work, read and update [scratch records](../scratch-space/SKILL.md) i
 
 Section introduction: “Dev Skills is designed to be installed in your project or agent. Copy the applicable prompt below into your coding agent and let it do the rest.” The first sentence establishes the product’s installation model; the second gives the action.
 
-Illustrative copy: “Export records as CSV. The export includes the active filters and excludes archived records.” A task heading could be “Export filtered records.”
+Illustrative purpose: “To reconcile exports whose rows arrive in different orders, Rowdiff matches records by customer ID and reports added, removed, and changed records.” This connects the capability to the reader’s task.
 
 Apply conventions locally; a local edit does not authorize a documentation overhaul.
