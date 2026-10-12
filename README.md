@@ -25,7 +25,7 @@ Dev Skills adapts established conventions for organizing agent work. These refer
 | [Persistent agent progress](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | Git-versioned goal and experiment records carry context across sessions. This project keeps them in `agents/scratch/`. |
 | [Topic and integration branches](https://git-scm.com/docs/gitworkflows) | Our adaptation promotes developer-owned features through developer branches, staging, a release candidate, and main. |
 | [The practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) | Focused checks provide early feedback; broader integration and release checks establish behavior across boundaries. Our testing doctrine adds cadence and evidence-reuse rules. |
-| [Hermes skill maintenance](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills) | Our opt-in refinement pass captures corrections and reusable lessons in skills at task end. |
+| [Hermes skill maintenance](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills) | Our opt-in refinement pass captures corrections and reusable lessons in skills after skill use. |
 
 ## Conventions your agent follows throughout work
 
@@ -38,7 +38,6 @@ Routine work should not require repeated reminders about scope, testing, commits
 | [git-discipline](skills/passive/git-discipline/SKILL.md) | Preserve local work and follow branch, commit, and push conventions. |
 | [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) | Select checks for development, integration, and release. |
 | [documentation-style](skills/passive/documentation-style/SKILL.md) | Explain the product and reader context before giving instructions. |
-| [refine-skill](skills/passive/refine-skill/SKILL.md) | Turn corrections and workflow lessons into skill updates when enabled. |
 | [scratch-space](skills/passive/scratch-space/SKILL.md) | Save progress, decisions, and failed experiments for later sessions. |
 
 ## Maintenance triggered by project events
@@ -47,6 +46,7 @@ Some upkeep should happen without another request. Triggered skills run when a d
 
 | Skill | What triggers it |
 | --- | --- |
+| [refine-skill](skills/triggered/refine-skill/SKILL.md) | Completed skill use; apply lessons when self-improvement is enabled. |
 | [maintain-scratch](skills/triggered/maintain-scratch/SKILL.md) | Fresh project session with weekly compaction due in the shared timer file. |
 
 ## Workflows you ask your agent to run

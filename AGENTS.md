@@ -37,7 +37,7 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 | periodic workflow, timed skill, shared timers | [design-time-triggered-skill](skills/activated/design-time-triggered-skill/SKILL.md) |
 | fresh session, weekly compaction | [maintain-scratch](skills/triggered/maintain-scratch/SKILL.md) |
 | create skill, author workflow | [design-skill](skills/activated/design-skill/SKILL.md) |
-| correction, workflow gap, refine, self-improvement | [refine-skill](skills/passive/refine-skill/SKILL.md) |
+| correction, workflow gap, refine, self-improvement | [refine-skill](skills/triggered/refine-skill/SKILL.md) |
 | README, onboarding, quickstart | [polish-docs](skills/activated/polish-docs/SKILL.md) |
 | debug, crash, regression | [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) |
 | test plan, acceptance, coverage gaps | [design-validation](skills/activated/design-validation/SKILL.md) |
@@ -49,7 +49,7 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 
 ## Authoring
 
-Use [design-skill](skills/activated/design-skill/SKILL.md) for creation and [refine-skill](skills/passive/refine-skill/SKILL.md) for evidence-backed maintenance.
+Use [design-skill](skills/activated/design-skill/SKILL.md) for creation and [refine-skill](skills/triggered/refine-skill/SKILL.md) for evidence-backed maintenance.
 
 - `README.md` is for humans and is marketing-centric: communicate concrete value, credible proof, and a clear path to adoption. `AGENTS.md` is for computers and is utility-centric: provide precise routing, constraints, commands, and decision rules. Keep agent operating instructions out of the README and promotional prose out of AGENTS. Marketing remains evidence-driven, without exaggeration.
 - Specify outcomes and consequential decision criteria; delegate execution mechanics.
@@ -71,9 +71,9 @@ Use `./agents/tmp/` for disposable files. Always keep `/agents/tmp/` in the root
 
 Self-improvement: enabled.
 
-**Always read and consider [refine-skill](skills/passive/refine-skill/SKILL.md).** It is a cross-cutting metaskill, not an optional route selected by task keywords.
+**Always read and consider [refine-skill](skills/triggered/refine-skill/SKILL.md).** It is a cross-cutting metaskill, not an optional route selected by task keywords.
 
-**At the end of each task, before the final response**, evaluate user corrections, recurring friction, workflow gaps, and verified reusable lessons. When self-improvement is enabled, apply one evidence-backed refinement pass within the task's write scope, validate any edits, and include them in the authorized task commit. No evidence means no edit; refinement does not recursively trigger itself. Set `Self-improvement: disabled.` to disable automatic edits, not the requirement to read and consider the metaskill. Explicit refinement requests still apply.
+**When skill use ends, before the final response**, evaluate user corrections, recurring friction, workflow gaps, and verified reusable lessons. When self-improvement is enabled, coalesce skills used for the same activity into one evidence-backed refinement pass within the task's write scope, validate any edits, and include them in the authorized task commit. Include blocked or interrupted skill use; rereading a skill does not retrigger the check. No evidence means no edit; refinement does not recursively trigger itself. Set `Self-improvement: disabled.` to disable automatic edits, not the requirement to read and consider the metaskill. Explicit refinement requests still apply.
 
 ## Reference skill libraries
 
