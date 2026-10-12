@@ -7,3 +7,5 @@ Critical boundaries: preserve customizations, record source revision and path ma
 Validation: packaging, invocation policies, catalog entries, and local links checked. No live installation or host-discovery test performed. New installers remain local until explicitly pushed to upstream main.
 
 Final opt-in correction: both installers complete installation and verification before asking about self-improvement, then persist yes/no in the identified AGENTS.md. Unanswered questions preserve prior state. Agent-wide scope uses an actually loaded host AGENTS default with project overrides, or an explicitly selected project when the host lacks that facility. Updated refine-skill enablement to match this explicit installation choice.
+
+Consolidated installers into activated install-dev-skills: scope selection comes first (1 project-wide, 2 agent-wide), then shared acquisition/merge/verification and destination-specific guidance; self-improvement remains the final question. Updated live routing and README to one prompt, removed duplicate installer packages. Evidence-backed refinement: shared installation procedure now has one owner, preserving both destination policies.

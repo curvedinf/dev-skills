@@ -11,7 +11,7 @@ Store skills in `skills/<passive|activated>/<name>/SKILL.md`. Frontmatter requir
 
 ## Installation
 
-For a project-local installation, use [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md): copy upstream skills and merge applicable guidance into the target `AGENTS.md`. For user-wide installation, use [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md): install into the host's skill directory and merge guidance into discoverable conventions skills. These are explicit installation workflows; authoring them does not execute them.
+Use [install-dev-skills](skills/activated/install-dev-skills/SKILL.md). Begin with the scope choice: **1. Project-wide** or **2. Agent-wide**. Install and verify, then ask about self-improvement and save the choice in the applicable `AGENTS.md`. Authoring this workflow does not execute it.
 
 ## Skill selection
 
@@ -26,8 +26,7 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 
 | Request terms | Read |
 | --- | --- |
-| install in project, vendor skills, merge AGENTS | [project-install-dev-skills](skills/activated/project-install-dev-skills/SKILL.md) |
-| install agent-wide, global skills, personal library | [agent-install-dev-skills](skills/activated/agent-install-dev-skills/SKILL.md) |
+| install dev-skills, project-wide, agent-wide | [install-dev-skills](skills/activated/install-dev-skills/SKILL.md) |
 | claims, citations, uncertainty | [evidence-discipline](skills/passive/evidence-discipline/SKILL.md) |
 | scope, requirements, ownership | [contract-discipline](skills/passive/contract-discipline/SKILL.md) |
 | commit, push, merge, branches | [git-discipline](skills/passive/git-discipline/SKILL.md) |
