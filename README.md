@@ -41,6 +41,14 @@ Routine work should not require repeated reminders about scope, testing, commits
 | [refine-skill](skills/passive/refine-skill/SKILL.md) | Turn corrections and workflow lessons into skill updates when enabled. |
 | [scratch-space](skills/passive/scratch-space/SKILL.md) | Save progress, decisions, and failed experiments for later sessions. |
 
+## Maintenance triggered by project events
+
+Some upkeep should happen without another request. Triggered skills run when a defined event occurs and their conditions are met; weekly scratch maintenance, for example, is checked when a fresh agent session first loads the project.
+
+| Skill | What triggers it |
+| --- | --- |
+| [maintain-scratch](skills/triggered/maintain-scratch/SKILL.md) | Fresh project session with weekly compaction due in the shared timer file. |
+
 ## Workflows you ask your agent to run
 
 Some jobs need a deliberate process: a bug needs a reproduction, an experiment needs a baseline, and an interrupted deployment needs its state checked before retrying. Activated skills capture those processes so you can request the job without writing the procedure each time. Ask your agent to use a skill by name and describe the result you want.
@@ -48,6 +56,7 @@ Some jobs need a deliberate process: a bug needs a reproduction, an experiment n
 | Skill | What it does |
 | --- | --- |
 | [install-dev-skills](skills/activated/install-dev-skills/SKILL.md) | Install the library in a project or agent-wide and merge its guidance. |
+| [design-time-triggered-skill](skills/activated/design-time-triggered-skill/SKILL.md) | Define periodic workflows with shared timers and explicit event triggers. |
 | [design-skill](skills/activated/design-skill/SKILL.md) | Create reusable process skills. |
 | [polish-docs](skills/activated/polish-docs/SKILL.md) | Rewrite and style documentation so newcomers understand the project and can start using it. |
 | [diagnose-and-repair](skills/activated/diagnose-and-repair/SKILL.md) | Reproduce a bug, identify its cause, and verify the fix. |

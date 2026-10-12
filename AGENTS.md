@@ -5,9 +5,10 @@ Skills standardize capable agents' working conventions across projects. They do 
 ## Categories
 
 - **Passive:** scoped, persistent guidance once enabled, like an MTG static ability.
+- **Triggered:** a workflow initiated by a non-user event when its conditions hold, like an MTG triggered ability.
 - **Activated:** an explicitly requested workflow, like an MTG activated ability. It may be finite or explicitly continuous.
 
-Store skills in `skills/<passive|activated>/<name>/SKILL.md`. Frontmatter requires `name`, a concise `description`, and `metadata.category`. Names are unique across categories. Activated Codex adapters set `policy.allow_implicit_invocation: false` in `agents/openai.yaml`; directory names alone do not enforce activation.
+Store skills in `skills/<passive|activated|triggered>/<name>/SKILL.md`. Frontmatter requires `name`, a concise `description`, and `metadata.category`. Names are unique across categories. Activated Codex adapters set `policy.allow_implicit_invocation: false` in `agents/openai.yaml`; passive and triggered adapters allow implicit invocation. Directory names and adapters do not implement event dispatch.
 
 ## Installation
 
@@ -33,6 +34,8 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 | test cadence, nightly, release gates | [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) |
 | wording, terminology, examples | [documentation-style](skills/passive/documentation-style/SKILL.md) |
 | checkpoint, resume, history | [scratch-space](skills/passive/scratch-space/SKILL.md) |
+| periodic workflow, timed skill, shared timers | [design-time-triggered-skill](skills/activated/design-time-triggered-skill/SKILL.md) |
+| fresh session, weekly compaction | [maintain-scratch](skills/triggered/maintain-scratch/SKILL.md) |
 | create skill, author workflow | [design-skill](skills/activated/design-skill/SKILL.md) |
 | correction, workflow gap, refine, self-improvement | [refine-skill](skills/passive/refine-skill/SKILL.md) |
 | README, onboarding, quickstart | [polish-docs](skills/activated/polish-docs/SKILL.md) |
@@ -58,7 +61,7 @@ Use [design-skill](skills/activated/design-skill/SKILL.md) for creation and [ref
 
 ## Scratch space
 
-**Fresh-session startup:** on the first project-context load after an initial user prompt, read [scratch-space](skills/passive/scratch-space/SKILL.md) and check `agents/scratch/maintenance.json`. Perform its maintenance pass if seven days have elapsed since completion or no completion is recorded. Check once per project per fresh session, not per task or context-window compaction. Update the timer only after completing maintenance; prohibited or interrupted work stays due. This check applies independently of skill self-improvement enablement.
+**Fresh-session startup:** on the first project-context load after the initial user prompt, read triggered [maintain-scratch](skills/triggered/maintain-scratch/SKILL.md) and check its entry in `agents/scratch/timers.json`. Run it if due (seven-day default). Check once per project per fresh session, not per task or context-window compaction. Preserve checked state across context handoffs. Shared timer completion advances only after verified maintenance; this is independent of self-improvement enablement.
 
 Use [scratch-space](skills/passive/scratch-space/SKILL.md) for durable, Git-versioned task notes in `./agents/scratch/`. Never ignore this directory; include relevant note updates when committing authorized work. Relevant skills read prior records and retain progress and evidence there; keep one record per goal rather than separate logs per skill. Read-only task scope still applies.
 

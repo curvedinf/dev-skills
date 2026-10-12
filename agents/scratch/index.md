@@ -1,6 +1,6 @@
 # Scratch index
 
-- [Maintenance timer](maintenance.json): weekly compaction, checked on fresh project sessions.
+- [Shared timers](timers.json): per-skill intervals and completion state, including weekly scratch maintenance.
 
 - [Installation skills](install-skills.md): destinations, merge policy, and validation limits.
 
