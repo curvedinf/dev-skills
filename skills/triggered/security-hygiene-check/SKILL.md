@@ -1,6 +1,6 @@
 ---
 name: security-hygiene-check
-description: Pre-commit privacy, PID/PII, credentials, secrets, confidential data. Inspect the proposed commit for leaks; apply the project's recorded disclosure policy and pause on uncovered findings before committing.
+description: Pre-commit privacy, PID/PII, credentials, secrets, confidential data. Triggers immediately before every project commit, including amendments, merge commits, and commits carrying skill refinements, after final edits and staging, even when committing or pushing is already authorized, independent of self-improvement enablement. Inspect for leaks; apply the project's recorded disclosure policy and pause on uncovered findings.
 metadata:
   category: triggered
 ---

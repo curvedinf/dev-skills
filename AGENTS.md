@@ -8,7 +8,7 @@ Skills standardize capable agents' working conventions across projects. They do 
 - **Triggered:** a workflow initiated by a non-user event when its conditions hold, like an MTG triggered ability.
 - **Activated:** an explicitly requested workflow, like an MTG activated ability. It may be finite or explicitly continuous.
 
-Store skills in `skills/<passive|activated|triggered>/<name>/SKILL.md`. Frontmatter requires `name`, a concise `description`, and `metadata.category`. Names are unique across categories. Activated Codex adapters set `policy.allow_implicit_invocation: false` in `agents/openai.yaml`; passive and triggered adapters allow implicit invocation. Directory names and adapters do not implement event dispatch.
+Store skills in `skills/<passive|activated|triggered>/<name>/SKILL.md`. Frontmatter requires `name`, a concise `description`, and `metadata.category`. Names are unique across categories. A triggered skill’s `description` states its trigger conditions so agents can fire it without reading the body; when too complex to state fully, give encompassing initial conditions plus “ and extra conditions.” and specify the full condition list inside the skill. Activated Codex adapters set `policy.allow_implicit_invocation: false` in `agents/openai.yaml`; passive and triggered adapters allow implicit invocation. Directory names and adapters do not implement event dispatch.
 
 ## Installation
 

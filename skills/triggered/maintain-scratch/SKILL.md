@@ -1,6 +1,6 @@
 ---
 name: maintain-scratch
-description: Fresh project session, weekly scratch compaction, remove obsolete notes. On initial project-context load, compact durable notes if the shared seven-day timer is due.
+description: Fresh project session, weekly scratch compaction, remove obsolete notes. Triggers on the first project-context load after a fresh session's initial user prompt, once per project per session before substantive work, only when the shared seven-day timer in agents/scratch/timers.json is due; follow-up tasks, rereading instructions, and context-window compaction do not retrigger it.
 metadata:
   category: triggered
 ---
