@@ -35,6 +35,7 @@ Switch workflows when the objective changes; preserve the shared goal record. Cr
 | test cadence, nightly, release gates | [testing-doctrine](skills/passive/testing-doctrine/SKILL.md) |
 | wording, terminology, examples | [documentation-style](skills/passive/documentation-style/SKILL.md) |
 | checkpoint, resume, history | [scratch-space](skills/passive/scratch-space/SKILL.md) |
+| context paging, page out, page in, offload context | [context-paging](skills/activated/context-paging/SKILL.md) |
 | periodic workflow, timed skill, shared timers | [design-time-triggered-skill](skills/activated/design-time-triggered-skill/SKILL.md) |
 | fresh session, weekly compaction | [maintain-scratch](skills/triggered/maintain-scratch/SKILL.md) |
 | create skill, author workflow | [design-skill](skills/activated/design-skill/SKILL.md) |
@@ -67,6 +68,14 @@ Use [design-skill](skills/activated/design-skill/SKILL.md) for creation and [ref
 Use [scratch-space](skills/passive/scratch-space/SKILL.md) for durable, Git-versioned task notes in `./agents/scratch/`. Never ignore this directory; include relevant note updates when committing authorized work. Retain only resumption state, costly evidence, and ongoing operational policy not recoverable from canonical files or Git. Scratch is not a changelog: no routine edit summaries, completion receipts, or duplicate skill lessons. All skills’ scratch instructions follow this retention rule; completed tasks usually need no note. Delete obsolete records rather than archiving them by default. Read-only task scope still applies.
 
 Use `./agents/tmp/` for disposable files. Always keep `/agents/tmp/` in the root `.gitignore`; never force-add its contents. Retain reusable evidence in durable storage.
+
+## Context paging opt-in
+
+[Context-paging](skills/activated/context-paging/SKILL.md) stores exact context in `agents/context-paging/context.db` (gitignored) so compaction and session boundaries do not lose it. Harness capture is per-project opt-in and only runs for subscribed projects. Once per session, before substantive work, check in order and stop at the first that holds:
+
+1. `python3 skills/activated/context-paging/scripts/cp_subscribed.py` exits 0 — this project is subscribed and the harness plugin is active. Skip silently.
+2. `agents/tmp/context-paging.json` records `{"harness_install": "declined"}`. Skip silently.
+3. Otherwise ask: "Install context paging in your harness for this project? It captures user messages automatically and keeps paged context recoverable." On yes, follow the skill's harness wiring ([references/kimi-hooks.md](skills/activated/context-paging/references/kimi-hooks.md)) this session, subscribing last. On no, write `{"harness_install": "declined"}` to `agents/tmp/context-paging.json`. Any other answer defers to the next session; ask at most once per session.
 
 ## Pre-commit security gate
 
