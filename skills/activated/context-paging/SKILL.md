@@ -42,7 +42,7 @@ SQLite at `<project>/agents/context-paging/context.db` (`CP_DB` overrides); keep
 ## Working discipline
 
 1. Page out exact, durable material as it is produced: decisions with rationale, file paths from long investigations, error text, large tool outputs worth keeping. One page per unit; the topic and tags name it for later retrieval.
-2. Page in when resuming (`cp_page_in.py --all`), when a previously known detail is missing after compaction (`cp_search.py "<term>"`), and by id (`cp_page_in.py --id N`) for full text.
+2. Page in when resuming (`cp_page_in.py --all`), when a previously known detail is missing after compaction (`cp_search.py "<term>"`), and by id (`cp_page_in.py --id N`) for full text. When you author a compaction summary, follow [context-compaction-procedure](../../triggered/context-compaction-procedure/SKILL.md) instead of the harness template.
 3. Messages are capture, pages are curation: hooks record verbatim user messages; record your own summaries and decisions as pages.
 
 ## Install into a project
